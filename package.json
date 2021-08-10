@@ -1,6 +1,6 @@
 {
   "name": "cookingbot",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
   "type": "es2020",
