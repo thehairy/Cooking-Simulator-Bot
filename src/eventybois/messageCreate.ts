@@ -1,5 +1,5 @@
-import type { Message } from "discord.js";
-import type { Event } from "src/@types";
+import { ApplicationCommandData, Collection, Message, MessageApplicationCommandData } from "discord.js";
+import type { ContextCommand, Event, SlashCommand } from "src/@types";
 
 export const name: Event['name'] = 'messageCreate';
 export const once: Event['once'] = false;
@@ -9,10 +9,9 @@ export const cook: Event['cook'] = async (message: Message): Promise<void> => {
         return;
     if (message.content.startsWith('?deploy')) {
         await message.guild?.commands.set([]);
-        message.client.slashybois.each(c => {
-            message.guild?.commands.create(c.data).catch(e => {
-                message.react('❌')
-            });
-        });
+        const commands: ApplicationCommandData[] = [];
+        message.client.slashybois.each(c => commands.push(c.data));
+        message.client.contextybois.each(c => commands.push(c.data));
+        message.guild?.commands.set(commands);
     }
 }

@@ -1,4 +1,4 @@
-import type { Command } from "src/@types";
+import type { SlashCommand } from "src/@types";
 import type { CommandInteraction } from "discord.js";
 import { MessageEmbed, Util } from "discord.js";
 import { performance } from 'perf_hooks';
@@ -6,9 +6,10 @@ import { Type } from '@sapphire/type';
 import { inspect } from 'util';
 import { clean } from "../util.js";
 
-export const data: Command['data'] = {
+export const data: SlashCommand['data'] = {
     name: 'eval',
     description: 'Eval! Eval! Eval!',
+    type: 'CHAT_INPUT',
     options: [
         {
             name: 'code',
@@ -25,7 +26,7 @@ export const data: Command['data'] = {
     ]
 }
 
-export const cook: Command['cook'] = async (interaction: CommandInteraction): Promise<void> => {
+export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction): Promise<void> => {
     if (interaction.user.id !== '211888560662511617')
         return void interaction.reply({ content: 'No.' });
 
