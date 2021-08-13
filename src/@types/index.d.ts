@@ -1,4 +1,4 @@
-import type { Collection, ApplicationCommandData, MessageApplicationCommandData, CommandInteraction, ContextMenuInteraction } from 'discord.js';
+import type { Collection, ApplicationCommandData, MessageApplicationCommandData, CommandInteraction, ContextMenuInteraction, UserApplicationCommandData } from 'discord.js';
 import translate from 'google-translate-api';
 
 declare module 'discord.js' {
@@ -10,24 +10,13 @@ declare module 'discord.js' {
   }
 }
 
-declare module 'translate' {
-  class Translate {
-    translate(text: string, to: string | TranslateOptions): Promise<string>;
-  }
-}
-
-interface TranslateOptions {
-  from?: string;
-  to?: string;
-}
-
 interface SlashCommand {
     data: ApplicationCommandData;
     cook(interaction: CommandInteraction): Promise<void>;
 }
 
 interface ContextCommand {
-    data: MessageApplicationCommandData;
+    data: MessageApplicationCommandData | UserApplicationCommandData;
     cook(interaction: ContextMenuInteraction): Promise<void>;
 }
 

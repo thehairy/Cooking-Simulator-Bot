@@ -37,4 +37,4 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
 
 
 // Login
-chef.login();
+chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.OdnLnlF-i7sNasTr-N0Y-6C3rew');

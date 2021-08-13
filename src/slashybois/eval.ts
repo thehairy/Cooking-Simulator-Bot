@@ -60,17 +60,15 @@ export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction
         evaluated = err;
         type = new Type(err).toString();
     }
-
-    const splitted = Util.splitMessage(evaluated, { maxLength: 4096 });
     
     const embed = new MessageEmbed()
         .setTitle('Evaluation Result')
-        .setDescription(`\`\`\`js\n${clean(splitted[0])}\n\`\`\``)
+        .setDescription(`\`\`\`js\n${clean(evaluated.slice(0, 4096))}\n\`\`\``)
         .addField('Type', `\`\`\`ts\n${type}\n\`\`\``)
         .addField('Input', `\`\`\`js\n${clean(code.length > 1024 ? `${code.slice(0, 1021)}...` : code)}\n\`\`\``)
         .setFooter(`Took ${timer} ms`);
 
-    if (splitted.length > 1)
+    if (evaluated.length > 4096)
         embed.addField('More...', 'The evaluated response was cut because it was longer than 4096 chars!');
 
     interaction.editReply({ embeds: [embed] })

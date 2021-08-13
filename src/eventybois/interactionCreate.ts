@@ -24,13 +24,11 @@ export const cook: Event['cook'] = async (interaction: Interaction): Promise<voi
             const evaluated = err.toString();
             const type = new Type(err).toString();
 
-            const splitted = Util.splitMessage(evaluated, { maxLength: 4096 });
-
             const embed = new MessageEmbed()
                 .setTitle('An error occured')
-                .setDescription(`\`\`\`js\n${clean(splitted[0])}\n\`\`\``)
+                .setDescription(`\`\`\`js\n${clean(evaluated.slice(0, 4096))}\n\`\`\``)
                 .addField('Type', `\`\`\`ts\n${type}\n\`\`\``)
-                .setFooter(`${splitted.length > 1 ? 'The error was longer than 4096 chars!' : ''}`);
+                .setFooter(`${evaluated.length > 1 ? 'The error was longer than 4096 chars!' : ''}`);
 
             interaction.editReply({ embeds: [embed] });
         }
@@ -48,12 +46,11 @@ export const cook: Event['cook'] = async (interaction: Interaction): Promise<voi
             const evaluated = err.toString();
             const type = new Type(err).toString();
 
-            const splitted = Util.splitMessage(evaluated, { maxLength: 4096 });
             const embed = new MessageEmbed()
                 .setTitle('An error occured')
-                .setDescription(`\`\`\`js\n${clean(splitted[0])}\n\`\`\``)
+                .setDescription(`\`\`\`js\n${clean(evaluated.slice(0, 4096))}\n\`\`\``)
                 .addField('Type', `\`\`\`ts\n${type}\n\`\`\``)
-                .setFooter(`${splitted.length > 1 ? 'The error was longer than 4096 chars!' : ''}`);
+                .setFooter(`${evaluated.length > 1 ? 'The error was longer than 4096 chars!' : ''}`);
 
             interaction.editReply({ embeds: [embed] });
         }
