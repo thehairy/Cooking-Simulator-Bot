@@ -4,7 +4,7 @@ import type { ContextCommand, SlashCommand, Event } from './@types';
 import path from 'path';
 
 // Client
-const chef = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS]})
+const chef = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_PRESENCES]})
 chef.slashybois = new Collection();
 chef.eventybois = new Collection();
 chef.contextybois = new Collection();
@@ -25,12 +25,13 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
 
     for (const slashyFile of slashyFiles) {
         const slash: SlashCommand = await import(path.resolve(__dirname, 'slashybois', slashyFile));
-        chef.slashybois.set(slash.data.name, slash);
+        console.log(slash);
+        chef.slashybois.set(slash.recipe.name, slash);
     }
 
     for (const contextFile of contextyFiles) {
         const context: ContextCommand = await import(path.resolve(__dirname, 'contextybois', contextFile));
-        chef.contextybois.set(context.data.name, context);
+        chef.contextybois.set(context.recipe.name, context);
     }
 })();
 

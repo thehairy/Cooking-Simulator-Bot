@@ -10,8 +10,8 @@ export const cook: Event['cook'] = async (message: Message): Promise<void> => {
     if (message.content.startsWith('?deploy')) {
         await message.guild?.commands.set([]);
         const commands: ApplicationCommandData[] = [];
-        message.client.slashybois.each(c => commands.push(c.data));
-        message.client.contextybois.each(c => commands.push(c.data));
+        message.client.slashybois.each(c => commands.push(c.recipe));
+        message.client.contextybois.each(c => commands.push(c.recipe));
         message.guild?.commands.set(commands);
     }
 }

@@ -2,7 +2,7 @@ import { ContextMenuInteraction, MessageEmbed } from "discord.js";
 import type { ContextCommand } from "src/@types";
 import translate from '@vitalets/google-translate-api';
 
-export const data: ContextCommand['data'] = {
+export const recipe: ContextCommand['recipe'] = {
     name: "Translate",
     type: 'MESSAGE'
 }

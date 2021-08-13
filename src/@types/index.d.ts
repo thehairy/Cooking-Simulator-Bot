@@ -11,12 +11,13 @@ declare module 'discord.js' {
 }
 
 interface SlashCommand {
-    data: ApplicationCommandData;
+    recipe: ApplicationCommandData;
+    ownerOnly: boolean;
     cook(interaction: CommandInteraction): Promise<void>;
 }
 
 interface ContextCommand {
-    data: MessageApplicationCommandData | UserApplicationCommandData;
+    recipe: MessageApplicationCommandData | UserApplicationCommandData;
     cook(interaction: ContextMenuInteraction): Promise<void>;
 }
 

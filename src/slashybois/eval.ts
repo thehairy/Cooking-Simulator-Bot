@@ -6,10 +6,11 @@ import { Type } from '@sapphire/type';
 import { inspect } from 'util';
 import { clean } from "../util.js";
 
-export const data: SlashCommand['data'] = {
+export const recipe: SlashCommand['recipe'] = {
     name: 'eval',
     description: 'Eval! Eval! Eval!',
     type: 'CHAT_INPUT',
+    defaultPermission: false,
     options: [
         {
             name: 'code',
@@ -25,6 +26,8 @@ export const data: SlashCommand['data'] = {
         }
     ]
 }
+
+export const ownerOnly: SlashCommand['ownerOnly'] = true;
 
 export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction): Promise<void> => {
     if (interaction.user.id !== '211888560662511617')
