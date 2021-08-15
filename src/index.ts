@@ -25,7 +25,6 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
 
     for (const slashyFile of slashyFiles) {
         const slash: SlashCommand = await import(path.resolve(__dirname, 'slashybois', slashyFile));
-        console.log(slash);
         chef.slashybois.set(slash.recipe.name, slash);
     }
 
@@ -38,4 +37,4 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
 
 
 // Login
-chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.OdnLnlF-i7sNasTr-N0Y-6C3rew');
+chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.lVNPKlH7lsxyJ0iisP7OG8ceEnQ');

@@ -1,4 +1,4 @@
-import type { Collection, ApplicationCommandData, MessageApplicationCommandData, CommandInteraction, ContextMenuInteraction, UserApplicationCommandData } from 'discord.js';
+import type { Collection, ApplicationCommandData, MessageApplicationCommandData, CommandInteraction, ContextMenuInteraction, UserApplicationCommandData, PermissionResolvable } from 'discord.js';
 import translate from 'google-translate-api';
 
 declare module 'discord.js' {
@@ -12,12 +12,15 @@ declare module 'discord.js' {
 
 interface SlashCommand {
     recipe: ApplicationCommandData;
-    ownerOnly: boolean;
+    ownerOnly?: boolean;
+    permission?: PermissionResolvable;
     cook(interaction: CommandInteraction): Promise<void>;
 }
 
 interface ContextCommand {
     recipe: MessageApplicationCommandData | UserApplicationCommandData;
+    ownerOnly: boolean;
+    permission?: PermissionResolvable;
     cook(interaction: ContextMenuInteraction): Promise<void>;
 }
 

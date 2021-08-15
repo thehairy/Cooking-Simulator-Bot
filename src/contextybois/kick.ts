@@ -7,6 +7,8 @@ export const recipe: ContextCommand['recipe'] = {
     defaultPermission: false
 }
 
+export const permission: ContextCommand['permission'] = Permissions.FLAGS.KICK_MEMBERS;
+
 export const cook: ContextCommand['cook'] = async (interaction: ContextMenuInteraction): Promise<void> => {
     await interaction.deferReply({ ephemeral: true });
 
