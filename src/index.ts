@@ -5,9 +5,7 @@ import path from 'path';
 
 // Client
 const chef = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_PRESENCES]})
-chef.slashybois = new Collection();
-chef.eventybois = new Collection();
-chef.contextybois = new Collection();
+chef.commandbois = new Collection();
 
 const eventyFiles = readdirSync(path.resolve(__dirname, 'eventybois')).filter(file => file.toString().endsWith('.js'));
 const slashyFiles = readdirSync(path.resolve(__dirname, 'slashybois')).filter(file => file.toString().endsWith('.js'));
@@ -25,16 +23,16 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
 
     for (const slashyFile of slashyFiles) {
         const slash: SlashCommand = await import(path.resolve(__dirname, 'slashybois', slashyFile));
-        chef.slashybois.set(slash.recipe.name, slash);
+        chef.commandbois.set(slash.recipe.name, slash);
     }
 
     for (const contextFile of contextyFiles) {
         const context: ContextCommand = await import(path.resolve(__dirname, 'contextybois', contextFile));
-        chef.contextybois.set(context.recipe.name, context);
+        chef.commandbois.set(context.recipe.name, context);
     }
 })();
 
 
 
 // Login
-chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.lVNPKlH7lsxyJ0iisP7OG8ceEnQ');
+chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.IRe9-Bez_0xYAJz0JLNQ43Z2Ec0');

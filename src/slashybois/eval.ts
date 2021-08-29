@@ -5,27 +5,13 @@ import { performance } from 'perf_hooks';
 import { Type } from '@sapphire/type';
 import { inspect } from 'util';
 import { clean } from "../util.js";
+import { SlashCommandBuilder } from "@discordjs/builders";
 
-export const recipe: SlashCommand['recipe'] = {
-    name: 'eval',
-    description: 'Eval! Eval! Eval!',
-    type: 'CHAT_INPUT',
-    defaultPermission: false,
-    options: [
-        {
-            name: 'code',
-            description: 'Code to be evaled',
-            type: 'STRING',
-            required: true
-        },
-        {
-            name: 'hidden',
-            description: 'If the output should be ephemeral (Default TRUE)',
-            type: 'BOOLEAN',
-            required: false
-        }
-    ]
-}
+export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
+    .setName('eval')
+    .setDescription('Evaluates a JavaScript expression.')
+    .addStringOption(option => option.setName('code').setDescription('Code to be evaluated.').setRequired(true))
+    .addBooleanOption(option => option.setName('hidden').setDescription('If the output should be ephemeral. (Default TRUE)').setRequired(false));
 
 export const ownerOnly: SlashCommand['ownerOnly'] = true;
 

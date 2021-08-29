@@ -4,7 +4,7 @@ import translate from '@vitalets/google-translate-api';
 
 export const recipe: ContextCommand['recipe'] = {
     name: "Translate",
-    type: 'MESSAGE'
+    type: '3'
 }
 
 export const cook: ContextCommand['cook'] = async (interaction: ContextMenuInteraction): Promise<void> => {

@@ -3,7 +3,7 @@ import type { ContextCommand } from "src/@types";
 
 export const recipe: ContextCommand['recipe'] = {
     name: 'Yeet',
-    type: 'USER',
+    type: '2',
     defaultPermission: false
 }
 
