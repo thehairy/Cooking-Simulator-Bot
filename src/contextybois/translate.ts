@@ -16,7 +16,7 @@ export const cook: ContextCommand['cook'] = async (interaction: ContextMenuInter
     const translated = await translate(content, { to: 'en' });
 
     const embed = new MessageEmbed()
-        .setTitle(`Translated from ${translated.from.language.iso} to en:`)
+        .setTitle(`Translated from ${translated.from.language.iso.toUpperCase()} to EN:`)
         .setDescription(translated.text)
         .setColor('BLUE');
 

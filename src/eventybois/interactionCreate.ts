@@ -13,7 +13,6 @@ export const cook: Event['cook'] = async (interaction: Interaction): Promise<voi
 };
 
 const handleCommand = async (interaction: CommandInteraction | ContextMenuInteraction): Promise<void> => {
-    console.log(typeof interaction);
     try {
         if (interaction.isCommand()) {
             const command = interaction.client.commandbois.get(interaction.commandName) as SlashCommand | undefined;
