@@ -1,6 +1,6 @@
 import type { Recipe } from 'src/@types';
 
-const recipes: Recipe[] = [
+export const recipes: Recipe[] = [
     {
         name: 'Potatosalad',
         ingredients: [
@@ -18,3 +18,11 @@ const recipes: Recipe[] = [
         text: 'Just make it too.'
     }
 ]
+
+export const getRandomRecipe = (): Recipe => {
+    return recipes[Math.floor(Math.random() * recipes.length)];
+}
+
+export const getRecipe = (name: string): Recipe | undefined => {
+    return recipes.find(recipe => recipe.name === name);
+}

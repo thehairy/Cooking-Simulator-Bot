@@ -2,6 +2,9 @@ import { Client, Collection, Intents } from 'discord.js';
 import { readdirSync } from 'fs';
 import type { ContextCommand, SlashCommand, Event } from './@types';
 import path from 'path';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // Client
 const chef = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_PRESENCES]})
@@ -35,4 +38,4 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
 
 
 // Login
-chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.wtHvVzwByfA_xqNxpPnOIZifoFI');
+chef.login();

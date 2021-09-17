@@ -1,6 +1,7 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
+import { getRandomRecipe } from "../recipes/recipe"
 import type { CommandInteraction } from "discord.js";
-import type { Recipe, SlashCommand } from "src/@types";
+import type { SlashCommand } from "src/@types";
 
 export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
     .setName('recipe')
@@ -13,8 +14,10 @@ export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
     ]));
 
 export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction): Promise<void> => {
-    interaction.deferReply();
+    await interaction.deferReply();
 
     const gamemode = interaction.options.getString('gamemode') || 'normal';
-    // Get recipes of that gamemode
+    const recipe = getRandomRecipe(gamemode);
+
+    await interaction.editReply({ content: recipe ? recipe.name : 'No recipe found!' })
 }
