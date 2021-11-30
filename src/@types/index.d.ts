@@ -1,4 +1,4 @@
-import type { Collection, ApplicationCommandData, MessageApplicationCommandData, CommandInteraction, ContextMenuInteraction, UserApplicationCommandData, PermissionResolvable } from 'discord.js';
+import type { Collection, ApplicationCommandData, MessageApplicationCommandData, CommandInteraction, ContextMenuInteraction, UserApplicationCommandData, PermissionResolvable, AutocompleteInteraction } from 'discord.js';
 
 declare module 'discord.js' {
   interface Client {
@@ -10,6 +10,15 @@ declare module 'discord.js' {
      * All events.
      */
     eventybois: Collection<string, Event>;
+  }
+}
+
+declare module '@discordjs/builders' {
+  interface SlashCommandStringOption {
+    /**
+     * Autocomplete
+     */
+    autocomplete?: boolean;
   }
 }
 
@@ -34,7 +43,7 @@ interface SlashCommand {
    * 
    * @param {CommandInteraction} interaction The CommandInteraction object from the interactionCreate event or collector.
    */
-  cook(interaction: CommandInteraction): Promise<void>;
+  cook(interaction: CommandInteraction | AutocompleteInteraction): Promise<void>;
 }
 
 /**

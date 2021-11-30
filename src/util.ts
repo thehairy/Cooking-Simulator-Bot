@@ -1,4 +1,5 @@
-import type { ColorResolvable, Message, Presence } from "discord.js";
+import { Collection, ColorResolvable, Message, Presence } from "discord.js";
+import { Recipe } from "./@types";
 
 export const clean = (text: string): string => {
     if (typeof (text) === 'string') {

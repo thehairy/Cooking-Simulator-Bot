@@ -7,6 +7,7 @@ import path from 'path';
 const chef = new Client({ intents: 839 })
 chef.commandbois = new Collection();
 
+
 const eventyFiles = readdirSync(path.resolve(__dirname, 'eventybois')).filter(file => file.toString().endsWith('.js'));
 const slashyFiles = readdirSync(path.resolve(__dirname, 'slashybois')).filter(file => file.toString().endsWith('.js'));
 const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filter(file => file.toString().endsWith('.js'));
@@ -35,4 +36,4 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
 
 
 // Login
-chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.j7HOtRT73FNGSv0fWhVQCwIvawc');
+chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.Pj6SkQKtIjD7QeUfkdqa1lgCf4o');

@@ -1,3 +1,4 @@
+import { Collection } from 'discord.js';
 import type { Recipe } from 'src/@types';
 
 export const recipes: Recipe[] = [
@@ -23,4 +24,10 @@ export const recipes: Recipe[] = [
 export const getRandom = (): Recipe => {
     const index = Math.floor(Math.random() * recipes.length);
     return recipes[index];
+}
+
+export const getAll = (): Collection<string, Recipe> => {
+    const col = new Collection<string, Recipe>();
+    recipes.forEach(recipe => col.set(recipe.name, recipe));
+    return col;
 }
