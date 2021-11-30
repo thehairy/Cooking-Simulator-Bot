@@ -4,7 +4,7 @@ import { MessageEmbed, Util } from "discord.js";
 import { performance } from 'perf_hooks';
 import { Type } from '@sapphire/type';
 import { inspect } from 'util';
-import { clean } from "../util.js";
+import { clean } from "../util";
 import { SlashCommandBuilder } from "@discordjs/builders";
 
 export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()

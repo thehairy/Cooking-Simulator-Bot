@@ -1,7 +1,8 @@
 import type { SlashCommand } from "src/@types";
-import type { CommandInteraction } from "discord.js";
+import type { ColorResolvable, CommandInteraction } from "discord.js";
 import { MessageEmbed } from "discord.js";
 import { SlashCommandBuilder } from "@discordjs/builders";
+import { statusColor } from "../util";
 
 export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
     .setName('info')
@@ -23,7 +24,7 @@ export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction
         .addField('Roles', `${target?.roles.cache.filter(r => r.id !== interaction.guild?.id).map(r => `<@&${r.id}>`).join(' ')}`)
         .addField('Did you know...', `... that the account was created <t:${~~((target?.user.createdTimestamp as any) / 1000)}:R>!\n... the user joined <t:${~~((target?.joinedTimestamp as any) / 1000)}:R>!`)
         .setFooter(`Warns, Kicks, Bans... - ID: ${target.id}`)
-        .setColor(`${!target?.presence ? 'GREY' : target.presence.status === 'online' ? 'GREEN' : target.presence.status === 'dnd' ? 'RED': 'YELLOW'}`);
+        .setColor(`${statusColor(target?.presence)}`);
 
     interaction.editReply({ embeds: [embed] })
 }

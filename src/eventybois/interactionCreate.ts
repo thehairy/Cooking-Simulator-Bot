@@ -28,7 +28,7 @@ const handleCommand = async (interaction: CommandInteraction | ContextMenuIntera
                 await command.cook(interaction);
             }
         }
-    } catch (err) {
+    } catch (err: any) {
         console.log(err);
         
         if (!interaction.deferred && !interaction.replied)

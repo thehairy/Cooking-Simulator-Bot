@@ -3,7 +3,6 @@
   "version": "0.1.1",
   "description": "",
   "main": "dist/index.js",
-  "type": "es2020",
   "scripts": {
     "build": "tsc -p ./ && npm start",
     "start": "node ."
@@ -12,13 +11,13 @@
   "author": "thehairy",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/builders": "^0.5.0",
+    "@discordjs/builders": "^0.8.2",
     "@discordjs/rest": "^0.1.0-canary.0",
-    "@sapphire/type": "^2.0.11",
+    "@sapphire/type": "^2.1.2",
     "@thehairy/reconlx-dev": "^1.1.5",
     "@vitalets/google-translate-api": "^7.0.0",
     "discord-api-types": "^0.22.0",
-    "discord.js": "^13.1.0",
+    "discord.js": "^13.3.1",
     "recursive-readdir": "^2.2.2",
     "typescript": "^4.3.5"
   },

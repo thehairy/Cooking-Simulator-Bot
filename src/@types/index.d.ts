@@ -115,6 +115,10 @@ interface Recipe {
    * The recipe itself.
    */
   text: string;
+  /**
+   * An image of the recipe.
+   */
+  image?: string;
 }
 
 /**
@@ -129,4 +133,8 @@ interface Ingredient {
    * The amount of this ingredient used in a recipe.
    */
   amount: string | number;
+}
+
+interface RecipeFile {
+  getRandom(): Recipe;
 }

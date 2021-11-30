@@ -3,13 +3,17 @@ import type { ContextCommand, ContextCommandRecipe, Event, SlashCommand } from "
 import { REST } from '@discordjs/rest';
 import { Routes } from "discord-api-types/v9";
 import { SlashCommandBuilder } from "@discordjs/builders";
+import { checkScam } from "../util";
 
 export const name: Event['name'] = 'messageCreate';
 export const once: Event['once'] = false;
 
 export const cook: Event['cook'] = async (message: Message): Promise<void> => {
-    if (message.author.id !== '211888560662511617')
+    if (message.author.id !== '211888560662511617') {
+        // checkSpam(message) TODO: continue when database implemented
+        checkScam(message);
         return;
+    }
     if (message.content.startsWith('?deploy')) {
         setCommands(message);
     }

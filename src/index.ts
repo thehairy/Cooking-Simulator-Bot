@@ -1,10 +1,10 @@
-import { Client, Collection, Intents } from 'discord.js';
+import { Client, Collection } from 'discord.js';
 import { readdirSync } from 'fs';
 import type { ContextCommand, SlashCommand, Event } from './@types';
 import path from 'path';
 
 // Client
-const chef = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_PRESENCES]})
+const chef = new Client({ intents: 839 })
 chef.commandbois = new Collection();
 
 const eventyFiles = readdirSync(path.resolve(__dirname, 'eventybois')).filter(file => file.toString().endsWith('.js'));
@@ -15,7 +15,7 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
     for (const eventFile of eventyFiles) {
         const event: Event = await import(path.resolve(__dirname, 'eventybois', eventFile));
         if (event.once) {
-            chef.once(event.name, (...args) => event.cook(chef, ...args));
+            chef.once(event.name, (...args) => event.cook(...args));
         } else {
             chef.on(event.name, (...args) => event.cook(...args));
         }
@@ -35,4 +35,4 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
 
 
 // Login
-chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.wtHvVzwByfA_xqNxpPnOIZifoFI');
+chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.j7HOtRT73FNGSv0fWhVQCwIvawc');

@@ -4,6 +4,6 @@ import type { Event } from "../@types";
 export const name: Event['name'] = 'ready';
 export const once: Event['once'] = true;
 
-export const cook: Event['cook'] = async (chef: Client) => {
+export const cook: Event['cook'] = async () => {
     console.log('Ready!');
 }
