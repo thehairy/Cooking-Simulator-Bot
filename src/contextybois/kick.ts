@@ -27,6 +27,8 @@ export const cook: ContextCommand['cook'] = async (interaction: ContextMenuInter
             new MessageButton().setCustomId('yeet').setLabel('Yeet').setStyle('DANGER'),
             new MessageButton().setCustomId('cancel').setLabel('Cancel').setStyle('PRIMARY')
         )
+    
+    // TODO: Kick and Ban Button
 
     const message = await interaction.followUp({ content: `Are you sure you want to kick ${target}?`, components: [buttonRow] });
     if (message instanceof Message) {

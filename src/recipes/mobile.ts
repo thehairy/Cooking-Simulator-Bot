@@ -1,6 +1,6 @@
 import type { Recipe } from 'src/@types';
 
-const recipes: Recipe[] = [
+export const recipes: Recipe[] = [
     {
         name: 'Potatosalad',
         ingredients: [
