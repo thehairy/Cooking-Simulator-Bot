@@ -2,7 +2,8 @@ import { Collection } from 'discord.js';
 import type { Recipe } from 'src/@types';
 
 export const recipes: Recipe[] = [
-    {   name: 'Fried Shrimp',
+    {   
+        name: 'Fried Shrimp',
         ingredients: [
             { name: 'Shrimp', amount: '6' },
             { name: 'Lemon', amount: '1' },
@@ -28,8 +29,8 @@ export const recipes: Recipe[] = [
             Parsley Garnish
             Garnish with Parsley Leaves, fresh 6g.
         `
-   },  
-     {
+      },  
+    {
         name: 'Baked Cod',
         ingredients: [
             { name: 'Lemon', amount: '1' },
@@ -66,7 +67,7 @@ export const recipes: Recipe[] = [
             Parsley Garnish
             Garnish with Parsley Leaves, fresh 6g.
         `
-  },
+      },
     {
         name: 'Baked Trout',
         ingredients: [
@@ -97,7 +98,7 @@ export const recipes: Recipe[] = [
             Parsley Garnish
             Garnish with Parsley Leaves, fresh 6g.
         `
-  },
+      },
     {
         name: 'Steak with French Fries',
         ingredients: [
@@ -126,7 +127,7 @@ export const recipes: Recipe[] = [
             Rosemary Garnish
             Garnish with Rosemary Twig 10g.
         `
-  },
+      },
     {
         name: 'Steak with French Fries',
         ingredients: [
@@ -139,7 +140,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+      },
     {
         name: 'Gazpacho',
         ingredients: [
@@ -173,7 +174,7 @@ export const recipes: Recipe[] = [
             Chives Garnish
             Garnish with Chives 8g.
         ` 
-  },
+      },
     {
         name: 'Pork Chops with Baked Potatoes',
         ingredients: [
@@ -204,7 +205,7 @@ export const recipes: Recipe[] = [
             Bake for 80s.
             Transfer onto a Plate. Serve Hot.
         ` 
-  },
+      },
     {
         name: 'Pork Tenderloin with Caramelized Vegetables',
         ingredients: [
@@ -240,7 +241,7 @@ export const recipes: Recipe[] = [
            Rosemary Garnish
            Garnish with Rosemary Twig 5g.
         ` 
-  },
+      },
     {
         name: 'Baked Trout with Roasted Brussels Sprouts',
         ingredients: [
@@ -288,7 +289,7 @@ export const recipes: Recipe[] = [
             Parsley Garnish
             Garnish with Parsley Leaves, fresh 6g.
         ` 
-  },
+      },
     {
         name: 'Fusilli Aglio, Olio e Peperoncino',
         ingredients: [
@@ -324,7 +325,7 @@ export const recipes: Recipe[] = [
             Parsley Garnish
             Garnish with Parsley Leaves, fresh 10g.
         ` 
-  },
+      },
     {
         name: 'Fast Pumpkin Soup',
         ingredients: [
@@ -346,7 +347,7 @@ export const recipes: Recipe[] = [
             Add Sour Cream 150ml.
             Pour the Liquid 300ml into a Deep Plate. Serve Hot.
         ` 
-  },
+      },
     {
         name: 'Simple Ukrainian Borscht',
         ingredients: [
@@ -371,7 +372,7 @@ export const recipes: Recipe[] = [
             Boil for 120s.
             Pour the Liquid 300ml into a Deep Plate. Serve Hot.
         ` 
-  },
+      },
     {
         name: 'Tomato Bruschetta',
         ingredients: [
@@ -412,7 +413,7 @@ export const recipes: Recipe[] = [
             Add Basil Leaf, fresh 6g.
             Serve cool.
         ` 
-  },
+      },
     {
         name: 'Shrimp Salad with Tomato Bruschetta',
         ingredients: [
@@ -484,7 +485,7 @@ export const recipes: Recipe[] = [
             Dill Garnish
             Garnish with Dill, fresh 5g.
         ` 
-  },
+      },
     {
         name: 'Fried Garlic Shrimp',
         ingredients: [
@@ -532,7 +533,7 @@ export const recipes: Recipe[] = [
             Cut Lemon 80g into Quarters 20g.
             Transfer onto a Plate.
         ` 
-  },
+      },
     {
         name: 'German Potato Salad',
         ingredients: [
@@ -576,7 +577,7 @@ export const recipes: Recipe[] = [
             Chives Garnish
             Garnish with Chives 8g.
         ` 
-  },
+    },
     {
         name: 'Smokey German Potato Salad',
         ingredients: [
@@ -623,7 +624,7 @@ export const recipes: Recipe[] = [
             Chives Garnish
             Garnish with Chives 8g.
         ` 
-  },
+    },
     {
         name: 'Baked Cod with Greek Salad',
         ingredients: [
@@ -681,7 +682,7 @@ export const recipes: Recipe[] = [
             Parsley Garnish
             Garnish with Parsley Leaves, fresh 6g.
         ` 
-  },
+    },
     {
         name: 'Grilled Tuna Steak',
         ingredients: [
@@ -707,7 +708,7 @@ export const recipes: Recipe[] = [
             Oregano Garnish
             Garnish with Oregano Twig 8g.
         ` 
-  },
+    },
     {
         name: 'Grilled Tuna Steak with Orange Salad',
         ingredients: [
@@ -747,7 +748,7 @@ export const recipes: Recipe[] = [
             Oregano Garnish
             Garnish with Oregano Twig 8g.
         ` 
-  },
+    },
     {
         name: 'Salmon with Asparagus',
         ingredients: [
@@ -777,7 +778,7 @@ export const recipes: Recipe[] = [
             Boil for 100s.
             Transfer onto a Plate. Serve hot.
         ` 
-  },
+    },
     {
         name: 'Salmon in Butter Sauce with Asparagus',
         ingredients: [
@@ -817,7 +818,7 @@ export const recipes: Recipe[] = [
             Grill for 100s
             Transfer onto a Plate. Serve hot.
         ` 
-  },
+    },
     {
         name: 'Salmon Steak and Boiled Potatoes',
         ingredients: [
@@ -848,7 +849,7 @@ export const recipes: Recipe[] = [
             Boil for 120s.
             Transfer onto a Plate. Serve hot.
         ` 
-  },
+    },
     {
         name: 'Salmon Steak, Potatoes, Grilled Tomatoes',
         ingredients: [
@@ -908,7 +909,7 @@ export const recipes: Recipe[] = [
             Dill Garnish
             Garnish with Dill, fresh 5g
         ` 
-  },
+    },
     {
         name: 'Fried Shrimp Boil',
         ingredients: [
@@ -964,7 +965,7 @@ export const recipes: Recipe[] = [
             Mixture.
             Serve hot.
         ` 
-  },
+    },
     {
         name: 'Baked Shrimp Boil',
         ingredients: [
@@ -1021,7 +1022,7 @@ export const recipes: Recipe[] = [
             Parlsey Garnish
             Garnish with Parsley Leaves, fresh 10g.
         ` 
-  },
+    },
     {
         name: 'Chicken Leg with Caprese Salad',
         ingredients: [
@@ -1060,7 +1061,7 @@ export const recipes: Recipe[] = [
             Basil Garnish
             Garnish with Basil Leaf, fresh 9g.
         ` 
-  },
+    },
     {
         name: 'Marinated Chicken Leg with Caprese Salad',
         ingredients: [
@@ -1107,7 +1108,7 @@ export const recipes: Recipe[] = [
             Basil Garnish
             Garnish with Basil Leaf, fresh 9g.
         ` 
-  },
+    },
     {
         name: 'Hamburger',
         ingredients: [
@@ -1142,7 +1143,7 @@ export const recipes: Recipe[] = [
             Top Burger Bun.
             Serve hot.
         ` 
-  },
+    },
     {
         name: 'Honey-Mustard Burger with French Fries',
         ingredients: [
@@ -1196,7 +1197,7 @@ export const recipes: Recipe[] = [
             Drizzle in Ketchup 10ml.
             Transfer onto a Plate. Serve hot.
         ` 
-  },
+    },
     {
         name: 'Duck Breast with Apples',
         ingredients: [
@@ -1236,7 +1237,7 @@ export const recipes: Recipe[] = [
             Apple.
             Serve hot.
         ` 
-  },
+    },
     {
         name: 'Duck Breast with Roasted Mushrooms',
         ingredients: [
@@ -1292,7 +1293,7 @@ export const recipes: Recipe[] = [
             Bake for 100s.
             Transfer onto a Plate. Serve hot.
         ` 
-  },
+    },
     {
         name: 'Grilled Beef Chuck with Baked Potatoes',
         ingredients: [
@@ -1329,7 +1330,7 @@ export const recipes: Recipe[] = [
             Rosemary Garnish
             Garnish with Rosemary Twig 10g.
         ` 
-  },
+    },
     {
         name: 'Beef Chuck with Potatoes and Garlic Sauce',
         ingredients: [
@@ -1382,7 +1383,7 @@ export const recipes: Recipe[] = [
             Rosemary Garnish
             Garnish with Rosemary Twig 10g.
         ` 
-  },
+    },
     {
         name: 'Pork Chops with Lemon Baked Potatoes',
         ingredients: [
@@ -1438,7 +1439,7 @@ export const recipes: Recipe[] = [
             Thyme Garnish
             Garnish with Thyme Twig 20g.
         ` 
-  },
+    },
     {
         name: 'Pork Tenderloin in Mustard Sauce',
         ingredients: [
@@ -1488,7 +1489,7 @@ export const recipes: Recipe[] = [
             Rosemary Garnish
             Garnish with Rosemary Twig 10g.
         ` 
-  },
+    },
     {
         name: 'Steak with Barbecue Sauce and Vegetables',
         ingredients: [
@@ -1547,7 +1548,7 @@ export const recipes: Recipe[] = [
             Rosemary Garnish
             Garnish with Rosemary Twig 5g.
         ` 
-  },
+    },
     {
         name: 'Blended Fusilli Aglio, Olio e Peperoncino',
         ingredients: [
@@ -1594,7 +1595,7 @@ export const recipes: Recipe[] = [
             Cut Chili Pepper 60g into Quarters ~8g.
             Transfer into a Casserole.
         ` 
-  },
+    },
     {
         name: 'Fast Beef Stroganoff over Fusilli',
         ingredients: [
@@ -1647,7 +1648,7 @@ export const recipes: Recipe[] = [
             Button Mushroom.
             Serve hot.
         ` 
-  },
+    },
     {
         name: 'Fast Beef Stroganoff over Buttered Fusilli',
         ingredients: [
@@ -1710,7 +1711,7 @@ export const recipes: Recipe[] = [
             Parsley Garnish
             Garnish with Parsley Leaves, fresh 6g.
         ` 
-  },
+    },
     {
         name: 'Beef Stroganoff over Buttered Fusilli',
         ingredients: [
@@ -1779,7 +1780,7 @@ export const recipes: Recipe[] = [
             Parsley Garnish
             Garnish with Parsley Leaves, fresh 6g.
         ` 
-  },
+    },
     {
         name: 'Fusilli with Neapolitan Sauce',
         ingredients: [
@@ -1824,7 +1825,7 @@ export const recipes: Recipe[] = [
             Garlic.
             Serve hot.
         ` 
-  },
+    },
     {
         name: 'Fusilli with Blended Neapolitan Sauce',
         ingredients: [
@@ -1883,7 +1884,7 @@ export const recipes: Recipe[] = [
             Oregano Garnish
             Garnish with Oregano Twig 8g.
         ` 
-  },
+    },
     {
         name: 'Fast Pasta alla Genovese',
         ingredients: [
@@ -1917,7 +1918,7 @@ export const recipes: Recipe[] = [
             Olive Oil 20ml,
             Beef Chuck.
         ` 
-  },
+    },
     {
         name: 'Pasta alla Genovese',
         ingredients: [
@@ -1939,7 +1940,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Penne in Broccoli Sauce',
         ingredients: [
@@ -1956,7 +1957,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Penne in Broccoli and Mushroom Sauce',
         ingredients: [
@@ -1974,7 +1975,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Penne in Salmon Sauce',
         ingredients: [
@@ -1992,7 +1993,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Penne in Fragrent Salmon Sauce',
         ingredients: [
@@ -2013,7 +2014,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Fast Caldo Verde',
         ingredients: [
@@ -2028,7 +2029,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Caldo Verde',
         ingredients: [
@@ -2045,7 +2046,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Corn Chowder',
         ingredients: [
@@ -2063,7 +2064,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Corn, Scallop and Bacon Chowder',
         ingredients: [
@@ -2083,7 +2084,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Duck Broth',
         ingredients: [
@@ -2097,7 +2098,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Duck Consommé',
         ingredients: [
@@ -2113,7 +2114,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Chunky Gazpacho',
         ingredients: [
@@ -2137,7 +2138,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Pumpkin Soup',
         ingredients: [
@@ -2155,7 +2156,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Pumpkin Soup with Croutons',
         ingredients: [
@@ -2174,7 +2175,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Tomato Soup',
         ingredients: [
@@ -2189,7 +2190,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Red Pepper and Tomato Soup',
         ingredients: [
@@ -2208,7 +2209,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Red Pepper and Tomato Soup with Toast',
         ingredients: [
@@ -2231,7 +2232,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Ukrainian Borscht',
         ingredients: [
@@ -2254,7 +2255,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Fast Ratatouille',
         ingredients: [
@@ -2273,7 +2274,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Ratatouille',
         ingredients: [
@@ -2293,7 +2294,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Shakshuka',
         ingredients: [
@@ -2314,7 +2315,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Spicy Shakshuka',
         ingredients: [
@@ -2339,7 +2340,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Pork Chops with Fried Egg and Lemon Baked Potatoes',
         ingredients: [
@@ -2360,7 +2361,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Ukrainian Borscht with Boiled Egg',
         ingredients: [
@@ -2385,7 +2386,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Grilled T-bone Steak and Baked Red Potatoes',
         ingredients: [
@@ -2399,7 +2400,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Barbecue T-bone Steak with Potatoes and a Corn on the Cob',
         ingredients: [
@@ -2417,7 +2418,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Barbecue T-bone Steak with Potatoes and a Hot Corn on the Cob',
         ingredients: [
@@ -2437,7 +2438,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Sweet and Sour Pork',
         ingredients: [
@@ -2455,7 +2456,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Marinated Sweet and Sour Pork',
         ingredients: [
@@ -2476,7 +2477,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Kung Pao Chicken',
         ingredients: [
@@ -2495,7 +2496,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Marinated Kung Pao Chicken',
         ingredients: [
@@ -2518,7 +2519,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Easy Chinese Egg Drop Soup ',
         ingredients: [
@@ -2532,7 +2533,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Chinese Egg Drop Soup',
         ingredients: [
@@ -2551,7 +2552,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Orange Pork Stir-Fry',
         ingredients: [
@@ -2570,7 +2571,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Orange Pork Stir Fry with Brussels Sprouts',
         ingredients: [
@@ -2591,7 +2592,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Helles Märzenbier Roasted Pork',
         ingredients: [
@@ -2613,7 +2614,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Dunkles Märzenbier BBQ Chicken',
         ingredients: [
@@ -2632,7 +2633,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Currant-Glazed Pork Tenderloing with Red Cabbage and Thyme Dumplings',
         ingredients: [
@@ -2650,7 +2651,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Simple Chicken Pumpkin Stew',
         ingredients: [
@@ -2661,7 +2662,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Chicken Pumpkin Stew',
         ingredients: [
@@ -2677,7 +2678,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Chicken Pumpkin Stew with Tomatoes',
         ingredients: [
@@ -2698,7 +2699,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Roasted Christmas Ham',
         ingredients: [
@@ -2716,7 +2717,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Roasted Christmas Ham with Garlic Fried Potatoes',
         ingredients: [
@@ -2737,7 +2738,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Lemon Chicken Breasts',
         ingredients: [
@@ -2755,7 +2756,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Lemon Chicken Breasts with Fruit Salad',
         ingredients: [
@@ -2776,7 +2777,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Lemon Tart',
         ingredients: [
@@ -2792,7 +2793,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Mango Tart',
         ingredients: [
@@ -2809,7 +2810,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Brussels Sprouts with Pancetta & Chicken Wings',
         ingredients: [
@@ -2825,7 +2826,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Brussels Sprouts with Pancetta & Grilled Swordfish',
         ingredients: [
@@ -2842,7 +2843,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Fiesta Corn with Tomatoes',
         ingredients: [
@@ -2863,7 +2864,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Fiesta Corn with Tomatoes & Spiced Chicken',
         ingredients: [
@@ -2886,7 +2887,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Sausage & Egg Muffin',
         ingredients: [
@@ -2900,7 +2901,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Sausage & Egg Muffin with Bacon',
         ingredients: [
@@ -2916,7 +2917,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Melting Potatoes',
         ingredients: [
@@ -2932,7 +2933,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Melting Potatoes with Egg de Provence',
         ingredients: [
@@ -2950,7 +2951,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Grilled Buffalo Wings',
         ingredients: [
@@ -2966,7 +2967,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Grilled Buffalo Wings with French Fries',
         ingredients: [
@@ -2984,7 +2985,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Spicy Sparkling Pork',
         ingredients: [
@@ -3000,7 +3001,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Spicy Sparkling Pork with Spring Salad',
         ingredients: [
@@ -3021,7 +3022,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Mango Salsa Chicken',
         ingredients: [
@@ -3036,7 +3037,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Mango Salsa Chicken with French Fries',
         ingredients: [
@@ -3051,7 +3052,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Chicken Tortellini Soup',
         ingredients: [
@@ -3073,7 +3074,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Chicken Tortellini Soup with Croutons',
         ingredients: [
@@ -3097,7 +3098,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Double Potato Salad with Pesto',
         ingredients: [
@@ -3113,7 +3114,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Double Potato Salad with Button Mushroom Sauce',
         ingredients: [
@@ -3130,7 +3131,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Baked Potatoes with Feta',
         ingredients: [
@@ -3145,7 +3146,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Baked Potatoes with Feta & Tomatoes',
         ingredients: [
@@ -3161,7 +3162,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Italian Home Fries',
         ingredients: [
@@ -3178,7 +3179,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Italian Home Fries with Cucumber Salad',
         ingredients: [
@@ -3198,7 +3199,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Grilled Swordfish Provencal',
         ingredients: [
@@ -3219,7 +3220,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Grilled Swordfish with Hot Sauce',
         ingredients: [
@@ -3242,7 +3243,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Chicken Tikka Masala',
         ingredients: [
@@ -3261,7 +3262,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
     {
         name: 'Chicken Tikka Masala with Potatoes',
         ingredients: [
@@ -3282,7 +3283,7 @@ export const recipes: Recipe[] = [
         text: `
             
         ` 
-  },
+    },
 ]
 
 export const getRandom = (): Recipe => {
