@@ -2,7 +2,7 @@ import { Collection } from 'discord.js';
 import type { Recipe } from 'src/@types';
 
 export const recipes: Recipe[] = [
-    {   
+    {
         name: 'Fried Shrimp',
         ingredients: [
             { name: 'Shrimp', amount: '6' },
@@ -21,15 +21,15 @@ export const recipes: Recipe[] = [
             Shrimp 120g,
             Fry for 50s.
             Transfer everything into a Deep plate. Serve hot.
-            
+
             LEMON QUARTERS
             Cut Lemon 80g into Quarters 20g.
             Transfer onto a Plate.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 6g.
         `
-      },  
+      },
     {
         name: 'Baked Cod',
         ingredients: [
@@ -59,11 +59,11 @@ export const recipes: Recipe[] = [
             Transfer Cod to a Baking Tray.
             Bake for 45s.
             Transfer onto the Plate. Serve Hot.
-            
+
             LEMON QUARTERS
             Cut Lemon 80g into Quarters 20g.
             Transfer onto a Plate.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 6g.
         `
@@ -90,11 +90,11 @@ export const recipes: Recipe[] = [
             Bake for 90s.
             Season with Horseradish, dried 5g.
             Transfer onto a Plate. Serve Hot.
-            
+
             LEMON QUARTERS
             Cut Lemon 80g into Quarters 20g.
             Transfer onto a Plate.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 6g.
         `
@@ -116,14 +116,14 @@ export const recipes: Recipe[] = [
             Black Pepper 4g.
             Fry for 45s each side.
             Transfer onto a Plate. Serve Hot.
-            
+
             FRENCH FRIES
             Take Potato 300g.
             Season with Salt 6g.
             Cut Potato 300g into Pieces 15g.
             Deep fry for 30s.
             Transfer onto a Plate. Serve Hot
-            
+
             ROSEMARY GARNISH
             Garnish with Rosemary Twig 10g.
         `
@@ -157,10 +157,10 @@ export const recipes: Recipe[] = [
             Salt 10g,
             Black Pepper 10g.
             Pour the Liquid 300ml into a Deep Plate. Serve cool.
-            
+
             CHIVES GARNISH
             Garnish with Chives 8g.
-        ` 
+        `
       },
     {
         name: 'Pork Chops with Baked Potatoes',
@@ -184,7 +184,7 @@ export const recipes: Recipe[] = [
             Pork Chops.
             Fry for 90s each side.
             Transfer onto a Plate. Serve Hot.
-            
+
             BAKED POTATOES
             Take Potato 300g.
             Season with Salt 6g.
@@ -192,7 +192,7 @@ export const recipes: Recipe[] = [
             Transfer onto a Baking Tray.
             Bake for 80s.
             Transfer onto a Plate. Serve Hot.
-        ` 
+        `
       },
     {
         name: 'Pork Tenderloin with Caramelized Vegetables',
@@ -218,17 +218,17 @@ export const recipes: Recipe[] = [
             Bake for 130s.
             Cut Pork Tenderloin into Slices 25g.
             Transfer onto a Plate. Serve Hot
-            
+
             CARAMELIZED VEGETABLES
             Cut:
             Beetroot 120g into Pieces 20g,
             Carrot 70g into Quarters ~18g.
             Fry for 80s.
             Transfer onto a Plate. Serve Hot.
-           
+
            ROSEMARY GARNISH
            Garnish with Rosemary Twig 5g.
-        ` 
+        `
       },
     {
         name: 'Baked Trout with Roasted Brussels Sprouts',
@@ -256,7 +256,7 @@ export const recipes: Recipe[] = [
             Bake for 90s.
             Season with Horseradish, dried 5g.
             Transfer onto a Plate. Serve Hot.
-            
+
             ROASTED BRUSSELS SPROUTS
             Add to a Bowl:
             Olive Oil 10ml,
@@ -269,14 +269,14 @@ export const recipes: Recipe[] = [
             Place on a Baking Tray.
             Bake for 100s.
             Transfer onto the Plate. Serve Hot.
-            
+
             LEMON QUARTERS
             Cut Lemon 80g into Quarters 20g.
             Transfer onto a Plate.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 6g.
-        ` 
+        `
       },
     {
         name: 'Fusilli Aglio, Olio e Peperoncino',
@@ -309,10 +309,10 @@ export const recipes: Recipe[] = [
             Fusilli.
             Fry for 15s.
             Transfer everything into the Casserole. Serve Hot.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 10g.
-        ` 
+        `
       },
     {
         name: 'Fast Pumpkin Soup',
@@ -334,7 +334,7 @@ export const recipes: Recipe[] = [
             Blend.
             Add Sour Cream 150ml.
             Pour the Liquid 300ml into a Deep Plate. Serve Hot.
-        ` 
+        `
       },
     {
         name: 'Simple Ukrainian Borscht',
@@ -359,7 +359,7 @@ export const recipes: Recipe[] = [
             Parsley Root 80g.
             Boil for 120s.
             Pour the Liquid 300ml into a Deep Plate. Serve Hot.
-        ` 
+        `
       },
     {
         name: 'Tomato Bruschetta',
@@ -383,7 +383,7 @@ export const recipes: Recipe[] = [
             Transfer onto a Baking tray.
             Bake for 30s.
             Transfer onto a Plate. Serve hot.
-            
+
             TOMATO DRESSING
             Transfer onto the Plate:
             Tomato 120g,
@@ -400,7 +400,7 @@ export const recipes: Recipe[] = [
             Transfer everything onto a Plate.
             Add Basil Leaf, fresh 6g.
             Serve cool.
-        ` 
+        `
       },
     {
         name: 'Shrimp Salad with Tomato Bruschetta',
@@ -444,7 +444,7 @@ export const recipes: Recipe[] = [
             Onion into Pieces 15g,
             Radish into Halves ~8g.
             Transfer everything onto a Plate. Serve cool.
-            
+
             BRUSCHETTA
             Take Bread 70g.
             Drizzle with Olive Oil 5ml.
@@ -452,7 +452,7 @@ export const recipes: Recipe[] = [
             Cut Bread into Halves 35g.
             Bake for 30s.
             Serve hot.
-            
+
             TOMATO DRESSING
             Transfer onto a Plate:
             Tomato 120g,
@@ -469,10 +469,10 @@ export const recipes: Recipe[] = [
             Transfer onto the Plate.
             Add Basil Leaf, fresh 6g.
             Serve Cool.
-            
+
             DILL GARNISH
             Garnish with Dill, fresh 5g.
-        ` 
+        `
       },
     {
         name: 'Fried Garlic Shrimp',
@@ -509,18 +509,18 @@ export const recipes: Recipe[] = [
             Parsley Leaves, fresh,
             Shrimp.
             Serve hot.
-            
+
             CROUTONS
             Take Bread 100g.
             Drizzle in Olive Oil 10ml.
             Cut Bread into Pieces 20g.
             Fry for 30s.
             Transfer onto a Plate. Serve Hot.
-            
+
             LEMON QUARTERS
             Cut Lemon 80g into Quarters 20g.
             Transfer onto a Plate.
-        ` 
+        `
       },
     {
         name: 'German Potato Salad',
@@ -561,10 +561,10 @@ export const recipes: Recipe[] = [
             Onion.
             Drizzle in Sunflower Oil 20ml.
             Serve warm.
-            
+
             CHIVES GARNISH
             Garnish with Chives 8g.
-        ` 
+        `
     },
     {
         name: 'Smokey German Potato Salad',
@@ -608,10 +608,10 @@ export const recipes: Recipe[] = [
             Onion.
             Drizzle in Sunflower Oil 20ml.
             Serve warm.
-            
+
             CHIVES GARNISH
             Garnish with Chives 8g.
-        ` 
+        `
     },
     {
         name: 'Baked Cod with Greek Salad',
@@ -652,7 +652,7 @@ export const recipes: Recipe[] = [
             Transfer onto the Baking Tray.
             Bake for 45s.
             Transfer onto a Plate. Serve hot.
-            
+
             GREEK SALAD
             Cut:
             Green Bell Pepper 120g into Pieces 50g,
@@ -666,10 +666,10 @@ export const recipes: Recipe[] = [
             Oregano, dried 10g.
             Drizzle in Olive Oil 10ml.
             Serve cool.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 6g.
-        ` 
+        `
     },
     {
         name: 'Grilled Tuna Steak',
@@ -688,14 +688,14 @@ export const recipes: Recipe[] = [
             Black Pepper 5g.
             Grill for 80s each side.
             Transfer onto the Plate. Serve hot.
-            
+
             LEMON QUARTERS
             Cut Lemon 80g into Quarters 20g.
             Transfer onto the Plate.
-            
+
             OREGANO GARNISH
             Garnish with Oregano Twig 8g.
-        ` 
+        `
     },
     {
         name: 'Grilled Tuna Steak with Orange Salad',
@@ -719,7 +719,7 @@ export const recipes: Recipe[] = [
             Thyme, dried 5g.
             Grill for 80s each side.
             Transfer onto the Plate. Serve Hot.
-            
+
             SICILIAN ORANGE SALAD
             Cut:
             Orange 100g into Pieces 20g,
@@ -732,10 +732,10 @@ export const recipes: Recipe[] = [
             White Vinegar 10ml.
             Drizzle in Mixture.
             Transfer onto the Plate. Serve cool.
-            
+
             OREGANO GARNISH
             Garnish with Oregano Twig 8g.
-        ` 
+        `
     },
     {
         name: 'Salmon with Asparagus',
@@ -757,7 +757,7 @@ export const recipes: Recipe[] = [
             Transfer onto the Plate.
             Drizzle in Lemon Juice 5ml.
             Serve hot.
-            
+
             BOILED ASPARAGUS
             Add to a Pot:
             Water 1000ml,
@@ -765,7 +765,7 @@ export const recipes: Recipe[] = [
             Asparagus 80g
             Boil for 100s.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Salmon in Butter Sauce with Asparagus',
@@ -800,12 +800,12 @@ export const recipes: Recipe[] = [
             Salmon Fillet.
             Drizzle in Mixture.
             Serve Hot.
-            
+
             GRILLED ASPARAGUS
             Take Asparagus 80g.
             Grill for 100s
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Salmon Steak and Boiled Potatoes',
@@ -828,7 +828,7 @@ export const recipes: Recipe[] = [
             Salmon Fillet.
             Fry for 60s each side.
             Transfer onto the Plate. Serve hot.
-            
+
             BOILED POTATOES
             Add to a Pot:
             Water 1000ml,
@@ -836,7 +836,7 @@ export const recipes: Recipe[] = [
             Potato 300g.
             Boil for 120s.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Salmon Steak, Potatoes, Grilled Tomatoes',
@@ -868,7 +868,7 @@ export const recipes: Recipe[] = [
             Salmon Fillet.
             Fry for 60s each side.
             Transfer onto the Plate. Serve hot.
-            
+
             BOILED POTATOES
             Cut:
             Potato 300g into Halves 75g,
@@ -888,15 +888,15 @@ export const recipes: Recipe[] = [
             Potato.
             Drizzle in Mixture.
             Serve hot.
-            
+
             GRILLED TOMATOES
             Take Tomato 240g.
             Grill for 70s.
             Transfer onto a Plate. Serve hot.
-            
+
             DILL GARNISH
             Garnish with Dill, fresh 5g
-        ` 
+        `
     },
     {
         name: 'Fried Shrimp Boil',
@@ -953,7 +953,7 @@ export const recipes: Recipe[] = [
             Cob of Corn,
             Mixture.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Baked Shrimp Boil',
@@ -1007,10 +1007,10 @@ export const recipes: Recipe[] = [
             Sausage.
             Bake for 80s.
             Transfer onto a Plate. Serve hot.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 10g.
-        ` 
+        `
     },
     {
         name: 'Chicken Leg with Caprese Salad',
@@ -1036,7 +1036,7 @@ export const recipes: Recipe[] = [
             Place on a Baking Tray.
             Bake for 120s.
             Transfer onto a Plate. Serve hot.
-            
+
             CAPRESE SALAD
             Cut:
             Tomato 120g into Pieces 20g,
@@ -1046,10 +1046,10 @@ export const recipes: Recipe[] = [
             Black Pepper 5g.
             Drizzle in Olive Oil 10ml.
             Transfer onto a Plate. Serve cool.
-            
+
             BASIL GARNISH
             Garnish with Basil Leaf, fresh 9g.
-        ` 
+        `
     },
     {
         name: 'Marinated Chicken Leg with Caprese Salad',
@@ -1079,7 +1079,7 @@ export const recipes: Recipe[] = [
             Transfer onto the Baking Tray.
             Bake for 120s.
             Transfer onto a Plate. Serve hot.
-            
+
             CAPRESE SALAD
             Add to a Bowl:
             Honey 15ml,
@@ -1093,10 +1093,10 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate.
             Drizzle in Mixture.
             Serve cool.
-            
+
             BASIL GARNISH
             Garnish with Basil Leaf, fresh 9g.
-        ` 
+        `
     },
     {
         name: 'Hamburger',
@@ -1131,7 +1131,7 @@ export const recipes: Recipe[] = [
             Onion 20g,
             Top Burger Bun.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Honey-Mustard Burger with French Fries',
@@ -1178,14 +1178,14 @@ export const recipes: Recipe[] = [
             Onion 20g,
             Top Burger Bun.
             Serve hot.
-            
+
             FRENCH FRIES
             Cut Potato 300g into Pieces 15g.
             Deep fry for 30s.
             Season with Salt 4g.
             Drizzle in Ketchup 10ml.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Duck Breast with Apples',
@@ -1225,7 +1225,7 @@ export const recipes: Recipe[] = [
             Duck Breast,
             Apple.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Duck Breast with Roasted Mushrooms',
@@ -1268,7 +1268,7 @@ export const recipes: Recipe[] = [
             Apple,
             Duck Breast.
             Serve hot.
-            
+
             ROASTED MUSHROOMS
             Add to a Bowl:
             Olive Oil 40ml,
@@ -1281,7 +1281,7 @@ export const recipes: Recipe[] = [
             Transfer onto a Baking Tray.
             Bake for 100s.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Grilled Beef Chuck with Baked Potatoes',
@@ -1309,16 +1309,16 @@ export const recipes: Recipe[] = [
             Cut Beef Chuck into Halves 100g.
             Grill for 180s.
             Transfer onto a Plate. Serve hot.
-            
+
             BAKED POTATOES
             Add to a Baking Tray:
             Potato 300g.
             Bake for 80s.
             Transfer onto a Plate. Serve hot.
-            
+
             ROSEMARY GARNISH
             Garnish with Rosemary Twig 10g.
-        ` 
+        `
     },
     {
         name: 'Beef Chuck with Potatoes and Garlic Sauce',
@@ -1353,14 +1353,14 @@ export const recipes: Recipe[] = [
             Drizzle in mixture.
             Grill for 180s.
             Transfer onto a Plate. Serve hot.
-            
+
             GARLIC SAUCE
             Cut Garlic 20g into Halves 5g.
             Add to a Bowl:
             Sour Cream 50ml,
             Dill, dried 5g,
             Garlic 20g.
-            
+
             BAKED POTATOES
             Add to a Baking Tray:
             Potato 300g.
@@ -1368,10 +1368,10 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate.
             Drizzle in Garlic Sauce 25ml.
             Serve hot.
-            
+
             ROSEMARY GARNISH
             Garnish with Rosemary Twig 10g.
-        ` 
+        `
     },
     {
         name: 'Pork Chops with Lemon Baked Potatoes',
@@ -1402,7 +1402,7 @@ export const recipes: Recipe[] = [
             Pork Chops.
             Fry for 90s each side.
             Transfer onto a Plate. Serve hot.
-            
+
             LEMON BAKED POTATOES
             Take Potato 300g.
             Season with:
@@ -1424,10 +1424,10 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate:
             Potato.
             Serve hot.
-            
+
             THYME GARNISH
             Garnish with Thyme Twig 20g.
-        ` 
+        `
     },
     {
         name: 'Pork Tenderloin in Mustard Sauce',
@@ -1456,7 +1456,7 @@ export const recipes: Recipe[] = [
             Bake for 130s.
             Cut Pork Tenderloin into Pieces 25g.
             Transfer onto a Plate. Serve hot.
-            
+
             MUSTARD SAUCE
             Add to a Pot:
             Sour Cream 50ml,
@@ -1467,17 +1467,17 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate:
             Pork Tenderloin.
             Drizzle in Mixture 20ml.
-            
+
             CARAMELIZED VEGETABLES
             Cut:
             Beetroot 120g into Pieces 20g,
             Carrot 140g into Pieces 14g.
             Fry for 80s.
             Transfer onto a Plate. Serve hot.
-            
+
             ROSEMARY GARNISH
             Garnish with Rosemary Twig 10g.
-        ` 
+        `
     },
     {
         name: 'Steak with Barbecue Sauce and Vegetables',
@@ -1508,7 +1508,7 @@ export const recipes: Recipe[] = [
             Black Pepper 5g.
             Fry for 45s each side.
             Transfer onto a Plate. Serve hot.
-            
+
             BARBECUE SAUCE
             Add to a Bowl:
             Ketchup 20ml,
@@ -1522,7 +1522,7 @@ export const recipes: Recipe[] = [
             Black Pepper 3g.
             Take Steak.
             Drizzle in Mixture 40ml.
-            
+
             DEEP-FRIED VEGETABLES
             Cut:
             Red Bell Pepper 80g into Quarters 20g,
@@ -1533,10 +1533,10 @@ export const recipes: Recipe[] = [
             Button Mushroom 50 into Halves 25g.
             Deep fry for 45s.
             Transfer onto a Plate. Serve hot.
-            
+
             ROSEMARY GARNISH
             Garnish with Rosemary Twig 5g.
-        ` 
+        `
     },
     {
         name: 'Blended Fusilli Aglio, Olio e Peperoncino',
@@ -1579,11 +1579,11 @@ export const recipes: Recipe[] = [
             Fusilli,
             Parsley Leaves, fresh.
             Serve hot.
-            
+
             DICED CHILI PEPPERS
             Cut Chili Pepper 60g into Quarters ~8g.
             Transfer into a Casserole.
-        ` 
+        `
     },
     {
         name: 'Fast Beef Stroganoff over Fusilli',
@@ -1608,7 +1608,7 @@ export const recipes: Recipe[] = [
             Fusilli 160g.
             Boil for 60s.
             Transfer into the Casserole.
-            
+
             FAST BEEF STROGANOFF
             Cut:
             Beef Chuck 150g into Pieces 50g,
@@ -1636,7 +1636,7 @@ export const recipes: Recipe[] = [
             Onion,
             Button Mushroom.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Fast Beef Stroganoff over Buttered Fusilli',
@@ -1667,7 +1667,7 @@ export const recipes: Recipe[] = [
             Fusilli.
             Fry for 15s.
             Transfer into a Casserole.
-            
+
             BEEF STROGANOFF
             Cut:
             Beef Chuck 150g into Pieces 50g,
@@ -1696,10 +1696,10 @@ export const recipes: Recipe[] = [
             Beef Chuck,
             Button Mushroom.
             Serve hot.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 6g.
-        ` 
+        `
     },
     {
         name: 'Beef Stroganoff over Buttered Fusilli',
@@ -1732,7 +1732,7 @@ export const recipes: Recipe[] = [
             Fusilli.
             Fry for 15s.
             Transfer into a Casserole.
-            
+
             BEEF STROGANOFF
             Cut:
             Beef Chuck 150g into Pieces 50g,
@@ -1765,10 +1765,10 @@ export const recipes: Recipe[] = [
             Beef Chuck,
             Button Mushroom.
             Serve hot.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 6g.
-        ` 
+        `
     },
     {
         name: 'Fusilli with Neapolitan Sauce',
@@ -1791,7 +1791,7 @@ export const recipes: Recipe[] = [
             Fusilli 160g.
             Boil for 60s.
             Transfer into a Casserole.
-            
+
             NEAPOLITAN SAUCE
             Cut:
             Tomato 120g into Pieces 15g,
@@ -1813,7 +1813,7 @@ export const recipes: Recipe[] = [
             Tomato,
             Garlic.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Fusilli with Blended Neapolitan Sauce',
@@ -1842,7 +1842,7 @@ export const recipes: Recipe[] = [
             Fusilli 160g.
             Boil for 60s.
             Transfer into a Casserole.
-            
+
             BLENDED NEAPOLITAN SAUCE
             Cut:
             Garlic 10g into Halves 5g,
@@ -1869,10 +1869,10 @@ export const recipes: Recipe[] = [
             Boil for 90s.
             Transfer into a Casserole: Mixture.
             Serve hot.
-            
+
             OREGANO GARNISH
             Garnish with Oregano Twig 8g.
-        ` 
+        `
     },
     {
         name: 'Fast Pasta alla Genovese',
@@ -1896,7 +1896,7 @@ export const recipes: Recipe[] = [
             Penne 150g.
             Boil for 60s.
             Transfer into a Casserole.
-            
+
             SAUCE
             Cut:
             Beef Chuck 160g into Quarters 40g,
@@ -1925,7 +1925,7 @@ export const recipes: Recipe[] = [
             Parsley Root,
             Beef Chuck.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Pasta alla Genovese',
@@ -1953,7 +1953,7 @@ export const recipes: Recipe[] = [
             Penne 150g.
             Boil for 60s.
             Transfer into a Casserole.
-            
+
             SAUCE
             Take Beef Chuck 160g.
             Season with Cumin, powder 5g.
@@ -1987,10 +1987,10 @@ export const recipes: Recipe[] = [
             Parsley Root,
             Beef Chuck.
             Serve hot.
-            
+
             SAGE GARNISH
             Garnish with Sage Leaf, fresh 3g.
-        ` 
+        `
     },
     {
         name: 'Penne in Broccoli Sauce',
@@ -2013,7 +2013,7 @@ export const recipes: Recipe[] = [
             Penne 150g.
             Boil for 60s.
             Transfer into a Casserole. Serve hot.
-            
+
             SAUCE
             Add to a Pot:
             Water 1000ml,
@@ -2038,7 +2038,7 @@ export const recipes: Recipe[] = [
             Onion,
             Rosemary Twig.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Penne in Broccoli and Mushroom Sauce',
@@ -2062,7 +2062,7 @@ export const recipes: Recipe[] = [
             Penne 150g.
             Boil for 60s.
             Transfer into a Casserole.
-            
+
             SAUCE
             Add to a Pot:
             Water 1000ml,
@@ -2093,7 +2093,7 @@ export const recipes: Recipe[] = [
             Button Mushroom,
             Rosemary Twig.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Penne in Salmon Sauce',
@@ -2117,7 +2117,7 @@ export const recipes: Recipe[] = [
             Penne 150g.
             Boil for 60s.
             Transfer into a Casserole.
-            
+
             SAUCE
             Cut:
             Salmon Fillet 210g into Pieces ~26g,
@@ -2139,7 +2139,7 @@ export const recipes: Recipe[] = [
             Onion,
             Salmon Fillet.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Penne in Fragrent Salmon Sauce',
@@ -2166,7 +2166,7 @@ export const recipes: Recipe[] = [
             Penne 150g.
             Boil for 60s.
             Transfer into a Casserole.
-            
+
             SAUCE
             Cut:
             Salmon Fillet 210g into Pieces ~26g,
@@ -2190,10 +2190,10 @@ export const recipes: Recipe[] = [
             Onion,
             Salmon Fillet.
             Serve hot.
-            
+
             ROSEMARY GARNISH
             Garnish with Rosemary Twig 5g.
-        ` 
+        `
     },
     {
         name: 'Fast Caldo Verde',
@@ -2225,7 +2225,7 @@ export const recipes: Recipe[] = [
             Sausage.
             Fry for 75s.
             Each serving consists of Soup 300ml, Brussels Sprouts 30g(~4), Sausage 40g(2). Serve hot.
-        ` 
+        `
     },
     {
         name: 'Caldo Verde',
@@ -2267,7 +2267,7 @@ export const recipes: Recipe[] = [
             Fry for 60s.
             Each serving consists of Soup 300ml, Brussels Sprouts 30g(~4), Broccoli 50g(1), Sausage 40g(2), Bacon 60g(1).
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Corn Chowder',
@@ -2312,7 +2312,7 @@ export const recipes: Recipe[] = [
             Boil for 100s.
             Each serving consists of Soup 250ml, Cob of Corn 60g(2), Potato 75g(3).
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Corn, Scallop and Bacon Chowder',
@@ -2369,7 +2369,7 @@ export const recipes: Recipe[] = [
             Fry for 50s.
             Each serving consists of Soup 250ml, Cob of Corn 60g(2), Potato 75g(3), Bacon 60g(1), Scallop 30g(1).
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Duck Broth',
@@ -2393,7 +2393,7 @@ export const recipes: Recipe[] = [
             Boil for 80s.
             Cut Duck Breast 560g into Pieces 35g.
             Each serving consists of Soup 300ml, Duck Breast 140g(4)
-        ` 
+        `
     },
     {
         name: 'Duck Consommé',
@@ -2422,10 +2422,10 @@ export const recipes: Recipe[] = [
             Tomato 120g.
             Boil for 120s.
             Pour the Liquid 300ml into a Deep Plate. Serve hot.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 6g.
-        ` 
+        `
     },
     {
         name: 'Chunky Gazpacho',
@@ -2469,7 +2469,7 @@ export const recipes: Recipe[] = [
             Cumin, powder 3g,
             Oregano, dried 3g.
             Pour the Liquid 300ml into a Deep Plate. Serve cool.
-            
+
             VEGETABLES
             Cut:
             Cucumber 75g into Pieces 25g,
@@ -2477,10 +2477,10 @@ export const recipes: Recipe[] = [
             Tomato 60g into Pieces 10g,
             Jalapeño 40g into Quarters 10g.
             Transfer into a Deep Plate. Serve cool.
-            
+
             CHIVES GARNISH
             Garnish with Chives 8g.
-        ` 
+        `
     },
     {
         name: 'Pumpkin Soup',
@@ -2517,10 +2517,10 @@ export const recipes: Recipe[] = [
             Blend.
             Add Sour Cream 150ml.
             Pour the Liquid 300ml into a Deep Plate. Serve hot.
-            
+
             CILANTRO GARNISH
             Garnish with Cilantro Leaves, fresh 6g.
-        ` 
+        `
     },
     {
         name: 'Pumpkin Soup with Croutons',
@@ -2558,17 +2558,17 @@ export const recipes: Recipe[] = [
             Blend.
             Add Sour Cream 150ml.
             Pour the Liquid 300ml into a Deep Plate. Serve hot.
-            
+
             CROUTONS
             Take Bread 50g.
             Drizzle in Olive Oil 5ml.
             Cut Bread into Pieces ~6g.
             Fry for 30s.
             Transfer into a Deep Plate.
-            
+
             CILANTRO GARNISH
             Garnish with Cilantro Leaves, fresh 6g.
-        ` 
+        `
     },
     {
         name: 'Tomato Soup',
@@ -2594,7 +2594,7 @@ export const recipes: Recipe[] = [
             Blend.
             Add Sour Cream 150ml.
             Pour the Liquid 300ml into a Deep Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Red Pepper and Tomato Soup',
@@ -2632,10 +2632,10 @@ export const recipes: Recipe[] = [
             Blend.
             Add Sour Cream 150ml.
             Pour the Liquid 300ml into a Deep Plate. Serve hot.
-            
+
             BASIL GARNISH
             Garnish with Basil Leaf, fresh 12g
-        ` 
+        `
     },
     {
         name: 'Red Pepper and Tomato Soup with Toast',
@@ -2679,21 +2679,21 @@ export const recipes: Recipe[] = [
             Blend.
             Add Sour Cream 150ml.
             Pour the Liquid 300ml into a Deep Plate. Serve hot.
-            
+
             MOZZARELLA SLICES
             Cut Mozzarella 80g into Pieces 16g.
             Transfer into a Deep Plate.
-            
+
             BUTTERED TOAST
             Take Bread 60g.
             Drizzle in Clarified Butter 5ml.
             Cut Bread into Quarters 15g.
             Fry for 30s.
             Transfer into a Deep Plate.
-            
+
             BASIL GARNISH
             Garnish with Basil Leaf, fresh 12g.
-        ` 
+        `
     },
     {
         name: 'Ukrainian Borscht',
@@ -2747,10 +2747,10 @@ export const recipes: Recipe[] = [
             Pour the Liquid 300ml into a Deep Plate.
             Add Sour Cream 50ml.
             Serve hot.
-            
+
             DILL GARNISH
             Garnish with Dill, fresh 4g.
-        ` 
+        `
     },
     {
         name: 'Fast Ratatouille',
@@ -2784,7 +2784,7 @@ export const recipes: Recipe[] = [
             Herbs de Provence, dried 9g.
             Boil for 60s.
             Transfer into a Casserole.
-            
+
             ROASTED VEGETABLES
             Cut:
             Eggplant 90g into Pieces ~11g,
@@ -2795,7 +2795,7 @@ export const recipes: Recipe[] = [
             Transfer onto the Baking Tray.
             Bake for 60s.
             Transfer into a Casserole. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Ratatouille',
@@ -2852,7 +2852,7 @@ export const recipes: Recipe[] = [
             Garlic,
             Parsley Leaves, fresh.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Shakshuka',
@@ -2906,10 +2906,10 @@ export const recipes: Recipe[] = [
             Garlic,
             Red Bell Pepper.
             Serve hot.
-            
+
             PARSLEY GARNISH
             Garnish with Parsley Leaves, fresh 6g.
-        ` 
+        `
     },
     {
         name: 'Spicy Shakshuka',
@@ -2971,21 +2971,21 @@ export const recipes: Recipe[] = [
             Red Bell Pepper,
             Jalapeño.
             Serve hot.
-            
+
             DICED GOAT CHEESE
             Cut Goat Cheese 100g into Pieces 10g.
             Transfer into a Casserole.
-            
+
             TOAST
             Take Bread 50g.
             Drizzle in Olive Oil 5ml.
             Cut Bread into Halves 25g.
             Bake for 30s.
             Transfer into a Casserole. Serve hot.
-            
+
             MINT GARNISH
             Garnish with Mint Leaf 6g.
-        ` 
+        `
     },
     {
         name: 'Pork Chops with Fried Egg and Lemon Baked Potatoes',
@@ -3016,7 +3016,7 @@ export const recipes: Recipe[] = [
             Pork Chops.
             Fry for 90s each side.
             Transfer onto a Plate. Serve hot.
-            
+
             LEMON BAKED POTATOES
             Take Potato 300g.
             Season with:
@@ -3038,7 +3038,7 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate:
             Potato.
             Serve hot.
-            
+
             FRIED EGG
             Crack Egg into the Pan.
             Season with:
@@ -3049,10 +3049,10 @@ export const recipes: Recipe[] = [
             Olive Oil 10ml.
             Fry for 30s.
             Transfer onto the Plate. Serve hot.
-            
+
             THYME GARNISH
             Garnish with Thyme Twig 20g.
-        ` 
+        `
     },
     {
         name: 'Ukrainian Borscht with Boiled Egg',
@@ -3109,7 +3109,7 @@ export const recipes: Recipe[] = [
             Pour the Liquid 300ml into a Deep Plate.
             Add Sour Cream 50ml.
             Serve hot.
-            
+
             HARD BOILED EGG
             Add to a Pot:
             Water 200ml,
@@ -3119,10 +3119,10 @@ export const recipes: Recipe[] = [
             Peel the Egg.
             Cut Peeled Egg into Halves ~32g.
             Transfer into a Deep Plate.
-            
+
             DILL GARNISH
             Garnish with Dill fresh 4g.
-        ` 
+        `
     },
     {
         name: 'Grilled T-bone Steak and Baked Red Potatoes',
@@ -3143,7 +3143,7 @@ export const recipes: Recipe[] = [
             Sweet Bell Pepper, powder 10g.
             Grill for 70s Each Side.
             Transfer onto a Plate. Serve hot.
-            
+
             BAKED RED POTATOES
             Take Red Potato 300g.
             Season with Salt 9g.
@@ -3153,7 +3153,7 @@ export const recipes: Recipe[] = [
             Onion.
             Bake for 60s.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Barbecue T-bone Steak with Potatoes and a Corn on the Cob',
@@ -3179,7 +3179,7 @@ export const recipes: Recipe[] = [
             Drizzle in Barbecue Sauce 30ml.
             Grill for 70s each side.
             Transfer onto a Plate. Serve hot.
-            
+
             BAKED RED POTATOES
             Take Red Potato 300g.
             Season with:
@@ -3190,7 +3190,7 @@ export const recipes: Recipe[] = [
             Onion.
             Bake for 60s.
             Transfer onto a Plate. Serve hot.
-            
+
             CORN ON THE COB WITH BUTTER
             Add to a Pot:
             Water 1000ml,
@@ -3200,7 +3200,7 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate.
             Drizzle in Clarified Butter 15ml.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Barbecue T-bone Steak with Potatoes and a Hot Corn on the Cob',
@@ -3228,7 +3228,7 @@ export const recipes: Recipe[] = [
             Drizzle in Barbecue Sauce 30ml.
             Grill for 70s each side.
             Transfer onto a Plate. Serve hot.
-            
+
             BAKED RED POTATOES AND GARLIC
             Add to a Pot:
             Water 1000ml,
@@ -3244,7 +3244,7 @@ export const recipes: Recipe[] = [
             Red Potato.
             Bake for 40s.
             Transfer onto a Plate. Serve hot.
-            
+
             CORN ON THE COB WITH CHILI BUTTER
             Add to a Pot:
             Water 1000ml,
@@ -3259,7 +3259,7 @@ export const recipes: Recipe[] = [
             Take Cob of Corn.
             Drizzle in Mixture 30ml.
             Transfer everything onto a Plate. Serve cold.
-        ` 
+        `
     },
     {
         name: 'Sweet and Sour Pork',
@@ -3285,7 +3285,7 @@ export const recipes: Recipe[] = [
             Oregano, dried 6g,
             Salt 5g,
             Black Pepper 5g.
-            
+
             PORK TENDERLOIN
             Cut Pork Tenderloin 250g into Pieces 25g.
             Add to a Pan:
@@ -3298,10 +3298,10 @@ export const recipes: Recipe[] = [
             Tomato Sauce 100ml.
             Fry for 20s.
             Transfer everything into a Deep Plate. Serve hot.
-            
+
             CILANTRO GARNISH
             Garnish with Cilantro Leaves, fresh 6g.
-        ` 
+        `
     },
     {
         name: 'Marinated Sweet and Sour Pork',
@@ -3329,7 +3329,7 @@ export const recipes: Recipe[] = [
             Salt 5g,
             Starch 7g,
             Soy Sauce 10ml.
-            
+
             TOMATO SAUCE
             Add to the Food Processor:
             Tomato 240g,
@@ -3339,7 +3339,7 @@ export const recipes: Recipe[] = [
             Oregano, dried 6g,
             Salt 5g,
             Black Pepper 5g.
-            
+
             PORK TENDERLOIN
             Take Pork Tenderloin 250g.
             Drizzle in Marinade.
@@ -3359,10 +3359,10 @@ export const recipes: Recipe[] = [
             Pork Tenderloin.
             Fry for 20s.
             Transfer everything into a Deep Plate. Serve hot.
-            
+
             CILANTRO GARNISH
             Garnish with Cilantro Leaves, fresh 6g.
-        ` 
+        `
     },
     {
         name: 'Kung Pao Chicken',
@@ -3391,7 +3391,7 @@ export const recipes: Recipe[] = [
             Sichuan Pepper, powder 3g.
             Boil for 40s.
             Transfer everything into a Deep Plate.
-            
+
             KUNG PAO CHICKEN
             Take Chicken Breast 240g.
             Season with Chili Flakes 20g
@@ -3401,13 +3401,13 @@ export const recipes: Recipe[] = [
             Chicken Breast.
             Fry for 90s.
             Transfer into a Deep Plate. Serve hot.
-            
+
             SCALLION GARNISH
             Take Scallion 240g.
             Separate Scallion.
             Scallion Leaves 60g into Quarters 5g.
             Garnish with Scallion Leaves.
-        ` 
+        `
     },
     {
         name: 'Marinated Kung Pao Chicken',
@@ -3434,7 +3434,7 @@ export const recipes: Recipe[] = [
             Soy Sauce 15ml,
             Rice Wine 10ml,
             Starch 8g.
-            
+
             SAUCE
             Add to a Bowl:
             Balsamic Vinegar 15ml,
@@ -3444,7 +3444,7 @@ export const recipes: Recipe[] = [
             Sugar 10g,
             Starch 5g,
             Sichuan Pepper, powder 3g.
-            
+
             KUNG PAO CHICKEN
             Take Chicken Breast 240g.
             Drizzle in Marinade.
@@ -3462,7 +3462,7 @@ export const recipes: Recipe[] = [
             Chicken Breast.
             Add to the Pan:
             Garlic, dried 20g,
-            Ginger 5g, 
+            Ginger 5g,
             Scallion Bulb.
             Fry for 20s.
             Add to the Pan:
@@ -3472,11 +3472,11 @@ export const recipes: Recipe[] = [
             Mixture,
             Chicken Breast.
             Serve hot.
-            
+
             SCALLION GARNISH
             Cut Scallion Leaves 60g into Quarters 5g.
             Garnish with Scallion Leaves.
-        ` 
+        `
     },
     {
         name: 'Easy Chinese Egg Drop Soup ',
@@ -3503,13 +3503,13 @@ export const recipes: Recipe[] = [
             Sesame Oil 10ml.
             Boil for 30s.
             Pour the Liquid 300ml into a Deep Plate. Serve hot.
-            
+
             SCALLION GARNISH
             Take Scallion 160g.
             Separate Scallion.
             Cut Scallion Leaves 40g into Quarters 5g.
             Garnish with Scallion Leaves.
-        ` 
+        `
     },
     {
         name: 'Chinese Egg Drop Soup',
@@ -3549,13 +3549,13 @@ export const recipes: Recipe[] = [
             Sesame Oil 10ml.
             Fry for 30s.
             Pour the Liquid 300ml into a Deep Plate. Serve hot.
-            
+
             SCALLION GARNISH
             Take Scallion 160g.
             Separate Scallion.
             Cut Scallion Leaves 40g into Quarters 5g.
             Garnish with Scallion Leaves.
-        ` 
+        `
     },
     {
         name: 'Orange Pork Stir-Fry',
@@ -3582,7 +3582,7 @@ export const recipes: Recipe[] = [
             Water 15ml,
             Soy Sauce 10ml,
             Honey 5ml.
-            
+
             PORK CHOPS
             Add into a Bowl:
             Rice Wine 15ml,
@@ -3607,7 +3607,7 @@ export const recipes: Recipe[] = [
             Sauce.
             Fry for 20s.
             Transfer everything into a Deep Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Orange Pork Stir Fry with Brussels Sprouts',
@@ -3635,7 +3635,7 @@ export const recipes: Recipe[] = [
             Water 15ml,
             Soy Sauce 10ml,
             Honey 5ml.
-            
+
             PORK CHOPS
             Add to a Bowl:
             Rice Wine 15ml,
@@ -3662,13 +3662,13 @@ export const recipes: Recipe[] = [
             Sauce.
             Boil for 20s.
             Transfer everything into a Deep Plate. Serve hot.
-            
+
             SCALLION GARNISH
             Take Scallion 160g.
             Separate Scallion.
             Cut Scallion Leaves 40g into Quarters 5g.
             Garnish with Scallion Leaves.
-        ` 
+        `
     },
     {
         name: 'Helles Märzenbier Roasted Pork',
@@ -3715,7 +3715,7 @@ export const recipes: Recipe[] = [
             Bake for 30s.
             Transfer the ingredients onto the Plate.
             Reserve Mixture.
-            
+
             GRAVY
             Transfer into a Deep Plate:
             Mixture,
@@ -3730,7 +3730,7 @@ export const recipes: Recipe[] = [
             Red Potato,
             Parsnip.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Dunkles Märzenbier BBQ Chicken',
@@ -3759,16 +3759,16 @@ export const recipes: Recipe[] = [
             Black Pepper 2g,
             Basil, dried 2g,
             Thyme, dried 2g.
-            
+
             CHICKEN LEG
             Take Chicken Leg 180g.
             Drizzle in Marinade 25ml.
             Grill for 120s.
             Transfer onto a Plate. Serve hot.
-            
+
             ROSEMARY GARNISH
             Garnish with Rosemary Twig 10g.
-        ` 
+        `
     },
     {
         name: 'Currant-Glazed Pork Tenderloing with Red Cabbage and Thyme Dumplings',
@@ -3802,7 +3802,7 @@ export const recipes: Recipe[] = [
             Bake for 30s.
             Cut Pork Tenderloin into Pieces 50g.
             Transfer onto the Plate. Serve hot.
-            
+
             RED CABBAGE
             Cut Red Cabbage 100g into Pieces 20g.
             Add to a Pan:
@@ -3810,7 +3810,7 @@ export const recipes: Recipe[] = [
             Red Cabbage.
             Fry for 40s.
             Transfer onto the Plate. Serve hot.
-            
+
             POTATO DUMPLINGS
             Add to a Pot:
             Water 1000ml,
@@ -3818,10 +3818,10 @@ export const recipes: Recipe[] = [
             Potato Dumplings 200g.
             Boil for 90s.
             Transfer onto a Plate. Serve hot.
-            
+
             THYME GARNISH
             Garnish with Thyme Twig 10g.
-        ` 
+        `
     },
     {
         name: 'Simple Chicken Pumpkin Stew',
@@ -3845,7 +3845,7 @@ export const recipes: Recipe[] = [
             Pumpkin,
             Chicken Leg.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Chicken Pumpkin Stew',
@@ -3885,7 +3885,7 @@ export const recipes: Recipe[] = [
             Pumpkin,
             Chicken Leg.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Chicken Pumpkin Stew with Tomatoes',
@@ -3939,10 +3939,10 @@ export const recipes: Recipe[] = [
             Pumpkin,
             Chicken Leg.
             Serve hot.
-            
+
             ROSEMARY GARNISH
             Garnish with Rosemary Twig 10g.
-        ` 
+        `
     },
     {
         name: 'Roasted Christmas Ham',
@@ -3976,15 +3976,15 @@ export const recipes: Recipe[] = [
             Cut Ham into Pieces 150g.
             Each serving consists of Ham 300g(2). Transfer onto a Plate:
             Ham.
-            
+
             A SLICE OF ORANGE
             Cut Orange 180g into Pieces 30g.
             Each Serving consists of Orange 30g(1). Transger onto a Plate:
             Orange.
-            
+
             ROSEMARY GARNISH
             Garnish with Rosemary Twig 5g.
-        ` 
+        `
     },
     {
         name: 'Roasted Christmas Ham with Garlic Fried Potatoes',
@@ -4021,7 +4021,7 @@ export const recipes: Recipe[] = [
             Cut Ham into Pieces 150g.
             Each serving consists of Ham 300g(2). Transfer onto a Plate:
             Ham.
-            
+
             GARLIC FRIED POTATOES
             Take Potato 150g.
             Season with:
@@ -4036,15 +4036,15 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate:
             Potato.
             Serve warm.
-            
+
             A SLICE OF ORANGE
             Cut Orange 180g into Pieces 30g.
             Each Serving consists of Orange 30g(1). Transger onto a Plate:
             Orange.
-            
+
             ROSEMARY GARNISH
             Garnish with Rosemary Twig 5g.
-        ` 
+        `
     },
     {
         name: 'Lemon Chicken Breasts',
@@ -4085,7 +4085,7 @@ export const recipes: Recipe[] = [
             Chicken Breast,
             Lemon.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Lemon Chicken Breasts with Fruit Salad',
@@ -4129,7 +4129,7 @@ export const recipes: Recipe[] = [
             Chicken Breast,
             Lemon.
             Serve hot.
-            
+
             FRUIT SALAD
             Cut:
             Apple 150g into Pieces 25g,
@@ -4139,7 +4139,7 @@ export const recipes: Recipe[] = [
             Apple,
             Orange.
             Serve Cool.
-        ` 
+        `
     },
     {
         name: 'Lemon Tart',
@@ -4174,7 +4174,7 @@ export const recipes: Recipe[] = [
             Orange,
             Strawberry.
             Serve cool.
-        ` 
+        `
     },
     {
         name: 'Mango Tart',
@@ -4212,7 +4212,7 @@ export const recipes: Recipe[] = [
             Strawberry,
             Honey Mango.
             Serve cool.
-        ` 
+        `
     },
     {
         name: 'Brussels Sprouts with Pancetta & Chicken Wings',
@@ -4247,7 +4247,7 @@ export const recipes: Recipe[] = [
             Brussels Sprouts,
             Pancetta.
             Serve hot.
-            
+
             CHICKEN WINGS
             Take Chicken Wings 120g.
             Season with:
@@ -4257,7 +4257,7 @@ export const recipes: Recipe[] = [
             Chicken Wings.
             Bake for 50s.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Brussels Sprouts with Pancetta & Grilled Swordfish',
@@ -4293,7 +4293,7 @@ export const recipes: Recipe[] = [
             Brussels Sprouts,
             Pancetta.
             Serve hot.
-            
+
             GRILLED SWORDFISH
             Take Swordfish 250g.
             Season with:
@@ -4303,7 +4303,7 @@ export const recipes: Recipe[] = [
             Drizzle in Lemon Juice 10ml.
             Grill for 75s each side.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Fiesta Corn with Tomatoes',
@@ -4351,7 +4351,7 @@ export const recipes: Recipe[] = [
             Jalapeño into Quarters 10g,
             Cob of Corn into Pieces 20g.
             Transfer everything into a Plate. Serve cool.
-        ` 
+        `
     },
     {
         name: 'Fiesta Corn with Tomatoes & Spiced Chicken',
@@ -4401,7 +4401,7 @@ export const recipes: Recipe[] = [
             Jalapeño into Quarters 10g,
             Cob of Corn into Pieces 20g.
             Transfer everything into a Plate. Serve cool.
-            
+
             SPICY CHICKEN
             Take Chicken Breast 240g.
             Season with:
@@ -4417,7 +4417,7 @@ export const recipes: Recipe[] = [
             Transfer into a Deep Plate:
             Chicken Breast.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Sausage & Egg Muffin',
@@ -4447,7 +4447,7 @@ export const recipes: Recipe[] = [
             Cheddar 20g,
             Egg.
             Serve warm.
-        ` 
+        `
     },
     {
         name: 'Sausage & Egg Muffin with Bacon',
@@ -4487,7 +4487,7 @@ export const recipes: Recipe[] = [
             Pork Breakfast Sausage,
             Bacon,
             Serve warm.
-        ` 
+        `
     },
     {
         name: 'Melting Potatoes',
@@ -4521,7 +4521,7 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate:
             Potato.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Melting Potatoes with Egg de Provence',
@@ -4557,13 +4557,13 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate:
             Potato.
             Serve hot.
-            
+
             EGG DE PROVENCE
             Crack Egg into the Pan.
             Fry for 35s.
             Season with Herbs de Provence, dried 5g.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Grilled Buffalo Wings',
@@ -4599,7 +4599,7 @@ export const recipes: Recipe[] = [
             Take Chicken Wings.
             Grill for 30s each side.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Grilled Buffalo Wings with French Fries',
@@ -4637,13 +4637,13 @@ export const recipes: Recipe[] = [
             Take Chicken Wings.
             Grill for 30s each side.
             Transfer onto a Plate. Serve hot.
-            
+
             FRENCH FRIES
             Cut Potato 150g into Pieces 15g.
             Deep fry for 30s.
             Drizzle in Ketchup 9ml.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Spicy Sparkling Pork',
@@ -4682,7 +4682,7 @@ export const recipes: Recipe[] = [
             Onion,
             Pork Shoulder.
             Serve hot.
-        ` 
+        `
     },
     {
         name: 'Spicy Sparkling Pork with Spring Salad',
@@ -4726,7 +4726,7 @@ export const recipes: Recipe[] = [
             Onion,
             Pork Shoulder.
             Serve hot.
-            
+
             SPRING SALAD
             Transfer onto a Plate:
             Tomato 120g,
@@ -4740,7 +4740,7 @@ export const recipes: Recipe[] = [
             Radis into Halves ~8g,
             Apple into Pieces 30g.
             Transfer everything into a Plate. Serve cool.
-        ` 
+        `
     },
     {
         name: 'Mango Salsa Chicken',
@@ -4771,7 +4771,7 @@ export const recipes: Recipe[] = [
             Chicken Breast,
             Honey Mango.
             Serve cold.
-            
+
             PENNE
             Add to a Pot:
             Water 1000ml,
@@ -4779,7 +4779,7 @@ export const recipes: Recipe[] = [
             Penne 100g.
             Boil for 60s.
             Transfer into a Deep Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Mango Salsa Chicken with French Fries',
@@ -4810,13 +4810,13 @@ export const recipes: Recipe[] = [
             Chicken Breast,
             Honey Mango.
             Serve cold.
-            
+
             FRENCH FRIES
             Cut Potato 150g into Pieces 15g.
             Deep fry for 30s.
             Drizzle in Ketchup 9ml.
             Transfer into a Deep Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Chicken Tortellini Soup',
@@ -4866,7 +4866,7 @@ export const recipes: Recipe[] = [
             Boil for 40s.
             Cut Chicken Breast into Pieces 20g.
             Each serving consists of Mixture 300ml, Chicken Breast 60g(3), Carrot 42g(3), Onion 30g(2). Serve hot.
-            
+
             TORTELLINI
             Add to a Pot:
             Water 1000ml,
@@ -4874,7 +4874,7 @@ export const recipes: Recipe[] = [
             Tortellini 150g.
             Boil for 35s.
             Transfer into a Deep Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Chicken Tortellini Soup with Croutons',
@@ -4926,7 +4926,7 @@ export const recipes: Recipe[] = [
             Boil for 40s.
             Cut Chicken Breast into Pieces 20g.
             Each serving consists of Mixture 300ml, Chicken Breast 60g(3), Carrot 42g(3), Onion 30g(2). Serve hot.
-            
+
             TORTELLINI
             Add to a Pot:
             Water 1000ml,
@@ -4934,7 +4934,7 @@ export const recipes: Recipe[] = [
             Tortellini 150g.
             Boil for 35s.
             Transfer into a Deep Plate. Serve hot.
-            
+
             CROUTONS
             Cut Bread 50g into Pieces 10g.
             Add to a Pan:
@@ -4943,7 +4943,7 @@ export const recipes: Recipe[] = [
             Bread.
             Fry for 30s.
             Transfer into a Deep Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Double Potato Salad with Pesto',
@@ -4975,14 +4975,14 @@ export const recipes: Recipe[] = [
             Drizzle in Pesto 15ml.
             Cut Fingerling Potato into Quarters ~18g.
             Transfer onto a Plate. Serve hot.
-            
+
             FRENCH FRIES
             Cut POtato 150g into Pieces 15g.
             Deep fry for 30s.
             Drizzle in Dijon Mustard 10ml.
             Transfer into a Plate. Serve hot.
-            
-        ` 
+
+        `
     },
     {
         name: 'Double Potato Salad with Button Mushroom Sauce',
@@ -5024,13 +5024,13 @@ export const recipes: Recipe[] = [
             Button Mushroom,
             Fingerling Potato.
             Serve hot.
-            
+
             FRENCH FRIES
             Cut POtato 150g into Pieces 15g.
             Deep fry for 30s.
             Drizzle in Dijon Mustard 10ml.
             Transfer into a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Baked Potatoes with Feta',
@@ -5060,10 +5060,10 @@ export const recipes: Recipe[] = [
             Feta,
             Potato.
             Serve hot.
-            
+
             CHIVES GARNISH
             Garnish with Chives 6g.
-        ` 
+        `
     },
     {
         name: 'Baked Potatoes with Feta & Tomatoes',
@@ -5097,10 +5097,10 @@ export const recipes: Recipe[] = [
             Potato,
             Tomato.
             Serve hot.
-            
+
             CHIVES GARNISH
             Garnish with Chives 6g.
-        ` 
+        `
     },
     {
         name: 'Italian Home Fries',
@@ -5137,14 +5137,14 @@ export const recipes: Recipe[] = [
             Onion,
             Sausage.
             Serve hot.
-            
+
             ITALIAN FRIES
             Take Potato 300g.
             Season with Sweet Bell Pepper, powder 6g.
             Cut Potato into Pieces 30g.
             Fry for 35s.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Italian Home Fries with Cucumber Salad',
@@ -5184,14 +5184,14 @@ export const recipes: Recipe[] = [
             Onion,
             Sausage.
             Serve hot.
-            
+
             ITALIAN FRIES
             Take Potato 300g.
             Season with Sweet Bell Pepper, powder 6g.
             Cut Potato into Pieces 30g.
             Fry for 35s.
             Transfer onto a Plate. Serve hot.
-            
+
             CUCUMBER SALAD
             Take Cucumber 160g.
             Drizzle in:
@@ -5199,7 +5199,7 @@ export const recipes: Recipe[] = [
             Olive Oil 5ml.
             Cut Cucumber into Pieces ~15g.
             Transfer into a Plate. Serve cool.
-        ` 
+        `
     },
     {
         name: 'Grilled Swordfish Provencal',
@@ -5239,7 +5239,7 @@ export const recipes: Recipe[] = [
             Garlic.
             Fry for 30s.
             Transfer everything into a Deep Plate. Serve hot.
-            
+
             GRILLED SWORDFISH
             Add to the Food Processor:
             Tomato 240g.
@@ -5253,7 +5253,7 @@ export const recipes: Recipe[] = [
             Grill for 70s each side.
             Drizzle in Mixture 50ml.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Grilled Swordfish with Hot Sauce',
@@ -5295,7 +5295,7 @@ export const recipes: Recipe[] = [
             Garlic.
             Fry for 30s.
             Transfer everything into a Deep Plate. Serve hot.
-            
+
             GRILLED SWORDFISH
             Add to the Food Processor:
             Tomato 120g,
@@ -5310,10 +5310,10 @@ export const recipes: Recipe[] = [
             Grill for 70s each side.
             Drizzle in Mixture 50ml.
             Transfer onto a Plate. Serve hot.
-            
+
             SAGE GARNISH
             Garnish with Sage Leaf, fresh 6g.
-        ` 
+        `
     },
     {
         name: 'Chicken Tikka Masala',
@@ -5342,7 +5342,7 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate:
             Chicken Breast.
             Serve hot.
-            
+
             TOMATO HOT SAUCE
             Cut:
             Garlic 20g into Halves 5g,
@@ -5361,7 +5361,7 @@ export const recipes: Recipe[] = [
             Serrano Pepper 18g.
             Fry for 20s.
             Transfer everything into a Deep Plate. Serve hot.
-        ` 
+        `
     },
     {
         name: 'Chicken Tikka Masala with Potatoes',
@@ -5392,7 +5392,7 @@ export const recipes: Recipe[] = [
             Transfer onto a Plate:
             Chicken Breast.
             Serve hot.
-            
+
             TOMATO HOT SAUCE
             Cut:
             Garlic 20g into Halves 5g,
@@ -5411,7 +5411,7 @@ export const recipes: Recipe[] = [
             Serrano Pepper 18g.
             Fry for 20s.
             Transfer everything into a Deep Plate. Serve hot.
-            
+
             BOILED POTATOES
             Add to a Pot:
             Water 1000ml,
@@ -5419,7 +5419,7 @@ export const recipes: Recipe[] = [
             Potato 300g.
             Boil for 120s.
             Transfer onto a Plate. Serve hot.
-        ` 
+        `
     },
 ]
 
