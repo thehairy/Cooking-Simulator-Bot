@@ -2,7 +2,7 @@ import { Collection } from 'discord.js';
 import type { Recipe } from 'src/@types';
 
 export const recipes: Recipe[] = [
-       {   
+       {
         name: 'Baked Donuts',
         ingredients: [
             { name: 'Baker Yeast', amount: '~1/6' },
@@ -35,8 +35,8 @@ export const recipes: Recipe[] = [
             Transfer Baked Donut Dough into Donut cake pan.
             Bake - set time and temperature according to the cake pan.
         `
-      },  
-        {   
+      },
+        {
         name: 'Blueberry Pie',
         ingredients: [
             { name: 'Butter', amount: '1/2' },
@@ -59,7 +59,7 @@ export const recipes: Recipe[] = [
             Water 100ml,
             Salt 5g.
             Mix using Paddle attachment.
-            
+
             BLUEBERRY FILLING
             Add to an empty Kneading Machine Bowl:
             Blueberry 100g,
@@ -74,8 +74,8 @@ export const recipes: Recipe[] = [
             Add Blueberry Filling to the same cake pan.
             Bake - set time and temperature according to the cake pan.
         `
-      },  
-       {   
+      },
+       {
         name: 'Bread',
         ingredients: [
             { name: 'Baker Yeast', amount: '~1/3' },
@@ -99,7 +99,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Brownies',
         ingredients: [
             { name: 'Butter', amount: '1' },
@@ -137,7 +137,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Cherry Pie',
         ingredients: [
             { name: 'Butter', amount: '1/2' },
@@ -159,7 +159,7 @@ export const recipes: Recipe[] = [
             Water 100ml,
             Salt 5g.
             Mix using Paddle attachment.
-            
+
             CHERRY PIE FILLING
             Add to a Pan:
             Water 100ml,
@@ -176,7 +176,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Chocolate Fudge Cake',
         ingredients: [
             { name: 'Egg', amount: '1' },
@@ -211,7 +211,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Churros',
         ingredients: [
             { name: 'Egg', amount: '1' },
@@ -241,7 +241,7 @@ export const recipes: Recipe[] = [
             Deep fry - set time and temperature according to the Dough Dispenser.
         `
       },
-       {   
+       {
         name: 'Fried Donuts',
         ingredients: [
             { name: 'Butter', amount: '1' },
@@ -274,7 +274,7 @@ export const recipes: Recipe[] = [
             Deep fry - set time and temperature according to the Dough Dispenser.
         `
       },
-       {   
+       {
         name: 'Simple Cupcake',
         ingredients: [
             { name: 'Butter', amount: '1' },
@@ -301,7 +301,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Tiramisu',
         ingredients: [
             { name: 'Butter', amount: '1' },
@@ -324,7 +324,7 @@ export const recipes: Recipe[] = [
             Biscuit Crumbs 300g,
             Melted Mixture.
             Mix using Hook attachment.
-            
+
             TIRAMISU FILLING
             Add to an empty Kneading Machine Bowl:
             Block Cream Cheese 500g,
@@ -341,7 +341,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Carrot Cake',
         ingredients: [
             { name: 'Raisins', amount: '50g' },
@@ -384,7 +384,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Chocolate Chip Cookies',
         ingredients: [
             { name: 'Chocolate Curls', amount: '50g' },
@@ -420,7 +420,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Chocolate Cookies',
         ingredients: [
             { name: 'Chocolate Curls', amount: '' },
@@ -456,7 +456,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Cinnamon Raisin Muffins',
         ingredients: [
             { name: 'Raisins', amount: '' },
@@ -475,7 +475,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Eclairs',
         ingredients: [
             { name: 'Egg', amount: '' },
@@ -489,7 +489,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'European Apple Pie',
         ingredients: [
             { name: 'Butter', amount: '' },
@@ -507,7 +507,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'European Cheesecake',
         ingredients: [
             { name: 'Butter', amount: '' },
@@ -527,7 +527,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Madeira Cake',
         ingredients: [
             { name: 'Egg', amount: '' },
@@ -542,7 +542,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Mapple Syrup Cake',
         ingredients: [
             { name: 'Butter', amount: '' },
@@ -559,7 +559,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'New York Cheesecake',
         ingredients: [
             { name: 'Butter', amount: '' },
@@ -579,7 +579,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Poppy Seed Cake',
         ingredients: [
             { name: 'Egg', amount: '' },
@@ -596,7 +596,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Pumpkin Pie',
         ingredients: [
             { name: 'Butter', amount: '' },
@@ -617,7 +617,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Sachertorte',
         ingredients: [
             { name: 'Dark Chocolate', amount: '' },
@@ -632,7 +632,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Sprinkle Cookies',
         ingredients: [
             { name: 'Egg', amount: '' },
@@ -650,7 +650,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Chocolate Yeast Cake',
         ingredients: [
             { name: 'Dark Chocolate', amount: '' },
@@ -668,7 +668,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Medovik',
         ingredients: [
             { name: 'Egg', amount: '' },
@@ -685,7 +685,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Mooncake',
         ingredients: [
             { name: 'Lotus Seed', amount: '' },
@@ -702,7 +702,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Oatmeal Cookies',
         ingredients: [
             { name: 'Egg', amount: '' },
@@ -721,7 +721,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Red Velvet Cake',
         ingredients: [
             { name: 'Butter', amount: '' },
@@ -742,7 +742,7 @@ export const recipes: Recipe[] = [
             Bake - set time and temperature according to the cake pan.
         `
       },
-       {   
+       {
         name: 'Strawberry Cake',
         ingredients: [
             { name: 'Strawberry', amount: '' },
