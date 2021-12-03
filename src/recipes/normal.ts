@@ -4882,7 +4882,7 @@ export const recipes: Recipe[] = [
             { name: 'Onion', amount: '1' },
             { name: 'Carrot', amount: '2' },
             { name: 'Bread', amount: '1/6' },
-            { name: 'Thyme Twig', amount: 3'' },
+            { name: 'Thyme Twig', amount: '3' },
             { name: 'Bay Leaf, fresh', amount: '1' },
             { name: 'Chicken Breast', amount: '1' },
             { name: 'Tortellini', amount: '10' },

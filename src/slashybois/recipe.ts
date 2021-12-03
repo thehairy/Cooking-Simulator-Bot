@@ -6,6 +6,13 @@ import * as mobile from '../recipes/mobile';
 import * as pizza from '../recipes/pizza';
 import * as cac from '../recipes/cac';
 
+
+const recipes = new Collection<string, Recipe>();
+normal.getAll().each(recipe => recipes.set(recipe.name, recipe));
+mobile.getAll().each(recipe => recipes.set(recipe.name, recipe));
+cac.getAll().each(recipe => recipes.set(recipe.name, recipe));
+pizza.getAll().each(recipe => recipes.set(recipe.name, recipe));
+
 export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
     .setName('recipe')
     .setDescription('Shows a random recipe of the game that you can make!')
@@ -40,26 +47,40 @@ export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
 
 export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction | AutocompleteInteraction): Promise<void> => {
     if (interaction.isAutocomplete()) {
-        const recipes = new Collection<string, Recipe>();
-        normal.getAll().each(recipe => recipes.set(recipe.name, recipe));
-        mobile.getAll().each(recipe => recipes.set(recipe.name, recipe));
-        cac.getAll().each(recipe => recipes.set(recipe.name, recipe));
-        pizza.getAll().each(recipe => recipes.set(recipe.name, recipe));
-        const filtered = recipes.filter(recipe => recipe.name.toLowerCase().startsWith(interaction.options.getFocused() + ''));
+        const filtered = recipes.filter(recipe => recipe.name.toLowerCase().includes(interaction.options.getFocused() + '')).first(25);
         return interaction.respond(filtered.map(recipe => ({ name: recipe.name, value: recipe.name })));
     }
     
     await interaction.deferReply();
 
-    const gamemode = interaction.options.getString('gamemode') || 'normal';
-    const recipe = ((await import(`../recipes/${gamemode}`)) as RecipeFile).getRandom();
+    if (interaction.options.getSubcommand(true) === 'get') {
+        const recipeName = interaction.options.getString('recipe', true);
+        const recipe = recipes.find(r => r.name.toLowerCase() === recipeName.toLowerCase());
 
-    const embed = new MessageEmbed()
-        .setTitle(recipe.name)
-        .setDescription(recipe.text)
-        .setThumbnail(recipe.image || '');
+        const embed = new MessageEmbed()
+        if (recipe) {
+            embed.setTitle(recipe.name)
+                .setDescription(recipe.text)
+                .setThumbnail(recipe.image || '');
+        } else {
+            embed.setTitle('No recipe found')
+                .setDescription(`No recipe found with the name **${recipeName}**`);
+        }
 
-    setTimeout(() => {
-        interaction.editReply({ embeds: [embed] });
-    }, 3000);
+        setTimeout(() => {
+            interaction.editReply({ embeds: [embed] });
+        }, 3000);
+    } else {
+        const gamemode = interaction.options.getString('gamemode') || 'normal';
+        const recipe = ((await import(`../recipes/${gamemode}`)) as RecipeFile).getRandom();
+
+        const embed = new MessageEmbed()
+            .setTitle(recipe.name)
+            .setDescription(recipe.text)
+            .setThumbnail(recipe.image || '');
+
+        setTimeout(() => {
+            interaction.editReply({ embeds: [embed] });
+        }, 3000);
+    }
 }

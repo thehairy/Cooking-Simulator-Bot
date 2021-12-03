@@ -4,11 +4,11 @@ import type { ContextCommand, SlashCommand, Event } from './@types';
 import path from 'path';
 
 import { config } from 'dotenv';
+config();
 
 // Client
 const chef = new Client({ intents: 839 })
 chef.commandbois = new Collection();
-config();
 
 
 const eventyFiles = readdirSync(path.resolve(__dirname, 'eventybois')).filter(file => file.toString().endsWith('.js'));
