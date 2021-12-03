@@ -3,9 +3,12 @@ import { readdirSync } from 'fs';
 import type { ContextCommand, SlashCommand, Event } from './@types';
 import path from 'path';
 
+import { config } from 'dotenv';
+
 // Client
 const chef = new Client({ intents: 839 })
 chef.commandbois = new Collection();
+config();
 
 
 const eventyFiles = readdirSync(path.resolve(__dirname, 'eventybois')).filter(file => file.toString().endsWith('.js'));
@@ -36,4 +39,4 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
 
 
 // Login
-chef.login('NzMwODM3Njc0OTE0NjExMjEx.XwdToA.Pj6SkQKtIjD7QeUfkdqa1lgCf4o');
+chef.login();

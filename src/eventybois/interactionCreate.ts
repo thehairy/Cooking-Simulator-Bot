@@ -60,8 +60,8 @@ const handleAutocomplete = async (interaction: AutocompleteInteraction): Promise
             await command.cook(interaction);
         }
     } catch (err: any) {
-        console.log(err);
-        
+        console.warn(err);
+                
         const evaluated = err.toString();
         const type = new Type(err).toString();
 

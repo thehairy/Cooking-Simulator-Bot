@@ -35,5 +35,5 @@ export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction
     await target.send({ embeds: [embed] });
     await target.kick(reason);
 
-    // Database stuff
+    // TODO: Database stuff
 }
