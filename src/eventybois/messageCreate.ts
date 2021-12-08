@@ -1,9 +1,10 @@
-import { ApplicationCommandData, Collection, Message, MessageApplicationCommandData } from "discord.js";
-import type { ContextCommand, ContextCommandRecipe, Event, SlashCommand } from "src/@types";
+import type { Message } from "discord.js";
+import type { Event } from "src/@types";
 import { REST } from '@discordjs/rest';
 import { Routes } from "discord-api-types/v9";
 import { SlashCommandBuilder } from "@discordjs/builders";
 import { checkScam } from "../util";
+import { User } from "../models/user";
 
 export const name: Event['name'] = 'messageCreate';
 export const once: Event['once'] = false;
@@ -16,6 +17,15 @@ export const cook: Event['cook'] = async (message: Message): Promise<void> => {
     }
     if (message.content.startsWith('?deploy')) {
         setCommands(message);
+    } else if (message.content.startsWith('?test')) {
+        let result = User.findOne({ _id: message.author.id })
+        console.log(result);
+        if (!result) {
+            const newUser = new User({ _id: message.author.id });
+            await newUser.save();
+        }
+        result = User.findOne({ _id: message.author.id });
+        console.log(result);
     }
 }
 
