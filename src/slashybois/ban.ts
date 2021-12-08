@@ -42,5 +42,5 @@ export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction
     await target.send({ embeds: [embed] });
     await target.ban({ reason: `${reason ? reason : 'No reason provided'}`, days: delMessages ? 7 : 0 });
 
-    // Database stuff
+    // TODO: Database stuff
 }
