@@ -1,5 +1,6 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
-import { CommandInteraction, GuildMember, MessageEmbed } from "discord.js";
+import { CommandInteraction, GuildMember, MessageEmbed, Permissions } from "discord.js";
+import { Users, Warns } from '../index';
 import type { SlashCommand } from "src/@types";
 
 export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
@@ -16,8 +17,13 @@ export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
         option.setDescription('Why did you warn the user?');
         return option;
     })
+    .setDefaultPermission(false);
+
+export const permission: SlashCommand['permission'] = Permissions.FLAGS.KICK_MEMBERS;
 
 export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction): Promise<void> => {
+    await interaction.deferReply({ ephemeral: true });
+    
     const target = interaction.options.getMember('user', true) as GuildMember;
     const reason = interaction.options.getString('reason') || undefined;
     const punisher = interaction.member as GuildMember;
@@ -34,5 +40,12 @@ export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction
 
     await target.send({ embeds: [embed] });
 
-    // TODO: Database stuff
+    let dbTarget = await Users.findOne({ where: { id: target.id } });
+    if (!dbTarget) {
+        dbTarget = await Users.create({ id: target.id })
+    }
+
+    await Warns.create({ reason, date: new Date(), punisher: punisher.id, userId: target.id });
+
+    await interaction.editReply({ content: `${target} has been warned.` });
 }

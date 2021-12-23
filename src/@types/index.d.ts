@@ -1,3 +1,4 @@
+import { ContextMenuCommandBuilder } from '@discordjs/builders';
 import type { Collection, ApplicationCommandData, MessageApplicationCommandData, CommandInteraction, ContextMenuInteraction, UserApplicationCommandData, PermissionResolvable, AutocompleteInteraction } from 'discord.js';
 
 declare module 'discord.js' {
@@ -10,15 +11,6 @@ declare module 'discord.js' {
      * All events.
      */
     eventybois: Collection<string, Event>;
-  }
-}
-
-declare module '@discordjs/builders' {
-  interface SlashCommandStringOption {
-    /**
-     * Autocomplete
-     */
-    autocomplete?: boolean;
   }
 }
 
@@ -53,7 +45,7 @@ interface ContextCommand {
   /**
    * The data as ContextCommandRecipe
    */
-  recipe: ContextCommandRecipe;
+  recipe: ContextMenuCommandBuilder;
   /**
    * If the command is owner only.
    */
@@ -68,24 +60,6 @@ interface ContextCommand {
    * @param {ContextMenuInteraction} interaction The ContextMenuInteraction object from the interactionCreate event or collector.
    */
   cook(interaction: ContextMenuInteraction): Promise<void>;
-}
-
-/**
- * An object used to create custom context commands.
- */
-interface ContextCommandRecipe {
-  /**
-   * The name of this command.
-   */
-  name: string;
-  /**
-   * The type of this command.
-   */
-  type: string;
-  /**
-   * If this command should be public or private. (DEFAULT TRUE)
-   */
-  defaultPermission?: boolean = true;
 }
 
 /**

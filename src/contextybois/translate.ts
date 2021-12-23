@@ -1,11 +1,11 @@
 import { ContextMenuInteraction, MessageEmbed } from "discord.js";
 import type { ContextCommand } from "src/@types";
 import translate from '@vitalets/google-translate-api';
+import { ContextMenuCommandBuilder } from "@discordjs/builders";
 
-export const recipe: ContextCommand['recipe'] = {
-    name: "Translate",
-    type: '3'
-}
+export const recipe: ContextCommand['recipe'] = new ContextMenuCommandBuilder()
+    .setName('Translate')
+    .setType(3);
 
 export const cook: ContextCommand['cook'] = async (interaction: ContextMenuInteraction): Promise<void> => {
     interaction.deferReply({ ephemeral: true });

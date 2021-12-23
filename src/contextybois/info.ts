@@ -1,11 +1,11 @@
 import type { ContextCommand } from "src/@types";
 import type { ContextMenuInteraction } from "discord.js";
 import { MessageEmbed } from "discord.js";
+import { ContextMenuCommandBuilder } from "@discordjs/builders";
 
-export const recipe: ContextCommand['recipe'] = {
-    name: 'Info',
-    type: '2'
-}
+export const recipe: ContextCommand['recipe'] = new ContextMenuCommandBuilder()
+    .setName('Info')
+    .setType(2);
 
 export const cook: ContextCommand['cook'] = async (interaction: ContextMenuInteraction): Promise<void> => {
     await interaction.deferReply({ ephemeral: true });

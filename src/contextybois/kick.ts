@@ -1,11 +1,12 @@
+import { ContextMenuCommandBuilder } from "@discordjs/builders";
 import { ButtonInteraction, ContextMenuInteraction, GuildMember, Message, MessageActionRow, MessageButton, Permissions } from "discord.js";
+import { Users, Kicks } from '../index';
 import type { ContextCommand } from "src/@types";
 
-export const recipe: ContextCommand['recipe'] = {
-    name: 'Yeet',
-    type: '2',
-    defaultPermission: false
-}
+export const recipe: ContextCommand['recipe'] = new ContextMenuCommandBuilder()
+    .setName('Yeet')
+    .setType(2)
+    .setDefaultPermission(false);
 
 export const permission: ContextCommand['permission'] = Permissions.FLAGS.KICK_MEMBERS;
 
@@ -38,8 +39,15 @@ export const cook: ContextCommand['cook'] = async (interaction: ContextMenuInter
             response.update({ content: 'Action canceled, you may hang up now.', components: [] });
         } else {
             await targetUser.send({ content: `You got kicked from ${interaction.guild?.name}` }).catch(() => {});
-            await target.kick().then(() => {
+            await target.kick().then(async () => {
                 response.update({ content: 'User successfully kicked, you may hang up now.', components: [] });
+
+            let dbTarget = await Users.findOne({ where: { id: target.id } });
+            if (!dbTarget) {
+                dbTarget = await Users.create({ id: target.id })
+            }
+
+            await Kicks.create({ reason: null, date: new Date(), punisher: executor.id, userId: target.id });
             }).catch((err) => {
                 console.log(err);
                 response.update({ content: 'User was not kicked, you may hang up now.', components: [] });

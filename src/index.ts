@@ -1,7 +1,11 @@
+// Import Structures
 import { Client, Collection } from 'discord.js';
 import { readdirSync } from 'fs';
-import type { ContextCommand, SlashCommand, Event } from './@types';
+import Sequelize from 'sequelize';
 import path from 'path';
+
+// Import Types
+import type { ContextCommand, SlashCommand, Event } from './@types';
 
 import { config } from 'dotenv';
 config();
@@ -10,6 +14,65 @@ config();
 const chef = new Client({ intents: 839 })
 chef.commandbois = new Collection();
 
+// Database
+const sequelize = new Sequelize.Sequelize('database', 'user', 'password', {
+	host: 'localhost',
+	dialect: 'sqlite',
+	logging: false,
+	// SQLite only
+	storage: 'database.sqlite',
+});
+
+// Models
+export const Users = sequelize.define('users', {
+    id: {
+        type: Sequelize.STRING,
+        unique: true,
+        primaryKey: true
+    }
+});
+
+export const Warns = sequelize.define('warns', {
+    reason: {
+        type: Sequelize.STRING
+    },
+    date: {
+        type: Sequelize.DATE
+    },
+    punisher: {
+        type: Sequelize.STRING
+    }
+});
+
+export const Kicks = sequelize.define('kicks', {
+    reason: {
+        type: Sequelize.STRING
+    },
+    date: {
+        type: Sequelize.DATE
+    },
+    punisher: {
+        type: Sequelize.STRING
+    }
+});
+
+export const Banns = sequelize.define('kicks', {
+    reason: {
+        type: Sequelize.STRING
+    },
+    date: {
+        type: Sequelize.DATE
+    },
+    punisher: {
+        type: Sequelize.STRING
+    }
+});
+
+Warns.belongsTo(Users);
+Kicks.belongsTo(Users);
+Banns.belongsTo(Users);
+
+// Commands and Events
 const eventyFiles = readdirSync(path.resolve(__dirname, 'eventybois')).filter(file => file.toString().endsWith('.js'));
 const slashyFiles = readdirSync(path.resolve(__dirname, 'slashybois')).filter(file => file.toString().endsWith('.js'));
 const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filter(file => file.toString().endsWith('.js'));

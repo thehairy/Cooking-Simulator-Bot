@@ -39,7 +39,7 @@ export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
             option.setName('recipe');
             option.setDescription('The recipe you want to see');
             option.setRequired(true);
-            option.autocomplete = true;
+            option.setAutocomplete(true);
             return option;
         });
         return sub;
