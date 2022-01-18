@@ -8,19 +8,19 @@ export const recipe: ContextCommand['recipe'] = new ContextMenuCommandBuilder()
     .setType(3);
 
 export const cook: ContextCommand['cook'] = async (interaction: ContextMenuInteraction): Promise<void> => {
-    interaction.deferReply({ ephemeral: true });
+    await interaction.deferReply({ ephemeral: true });
 
     const content: string = interaction.options.getMessage('message', true)?.content;
 
     try {
-    const translated = await translate(content, { to: 'en' });
+        const translated = await translate(content, { to: interaction.locale.split('-')?.[0] });
 
-    const embed = new MessageEmbed()
-        .setTitle(`Translated from ${translated.from.language.iso.toUpperCase()} to EN:`)
-        .setDescription(translated.text)
-        .setColor('BLUE');
+        const embed = new MessageEmbed()
+            .setTitle(`Translated from ${translated.from.language.iso.toUpperCase()} to ${interaction.locale.toUpperCase()}:`)
+            .setDescription(translated.text)
+            .setColor('BLUE');
 
-    interaction.editReply({ embeds: [embed] });
+        await interaction.editReply({ embeds: [embed] });
     } catch (err) {
         console.log(err);
     }
