@@ -39,7 +39,7 @@ export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction
         .addField(`Punisher`, `${punisher}`)
         .addField(`Reason`, `${reason ? reason : 'No reason provided'}`);
 
-    //await target.send({ embeds: [embed] }).catch(() => {});
+    await target.send({ embeds: [embed] }).catch(() => {});
 
     let dbTarget = await Users.findOne({ where: { id: target.id } });
     if (!dbTarget) {

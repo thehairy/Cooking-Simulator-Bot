@@ -8,7 +8,6 @@ export const name: Event['name'] = 'interactionCreate';
 export const once: Event['once'] = false;
 
 export const cook: Event['cook'] = async (interaction: Interaction): Promise<void> => {
-    console.log(interaction.type);
     if (interaction.isCommand() || interaction.isContextMenu()) {
         return void handleCommand(interaction);
     }
