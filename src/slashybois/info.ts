@@ -1,5 +1,5 @@
 import type { SlashCommand } from "src/@types";
-import type { ColorResolvable, CommandInteraction } from "discord.js";
+import type { CommandInteraction, GuildMember } from "discord.js";
 import { MessageEmbed } from "discord.js";
 import { SlashCommandBuilder } from "@discordjs/builders";
 import { statusColor } from "../util";
@@ -12,7 +12,7 @@ export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
 export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction): Promise<void> => {
     await interaction.deferReply({ ephemeral: true });
 
-    const target = await interaction.guild?.members.fetch(interaction.options.getUser('user')?.id || interaction.user.id);
+    const target = interaction.options.getMember('user') as GuildMember;
 
     if (!target)
         return void interaction.editReply({ content: 'Not sure what happened, but there was an error. :('});
@@ -23,7 +23,7 @@ export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction
         .addField('Joined:', `<t:${~~((target?.joinedTimestamp as any) / 1000)}:F>`)
         .addField('Roles', `${target?.roles.cache.filter(r => r.id !== interaction.guild?.id).map(r => `<@&${r.id}>`).join(' ')}`)
         .addField('Did you know...', `... that the account was created <t:${~~((target?.user.createdTimestamp as any) / 1000)}:R>!\n... the user joined <t:${~~((target?.joinedTimestamp as any) / 1000)}:R>!`)
-        .setFooter(`Warns, Kicks, Bans... - ID: ${target.id}`)
+        .setFooter({ text: `Warns, Kicks, Bans... - ID: ${target.id}` })
         .setColor(`${statusColor(target?.presence)}`);
 
     interaction.editReply({ embeds: [embed] })

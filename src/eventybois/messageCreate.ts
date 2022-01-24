@@ -50,7 +50,6 @@ const setCommands = async (message: Message): Promise<void> => {
         } else if (command && command.permission) {
             const roles = message.guild?.roles.cache.filter(r => r.permissions.has(command.permission!)).map(r => r.id);
             roles?.forEach(r => {
-                console.log(message.guild?.roles.cache.get(r)?.name);
                 c.permissions.add({ permissions: [{ id: r, type: 'ROLE', permission: true }] }
             )});
         }

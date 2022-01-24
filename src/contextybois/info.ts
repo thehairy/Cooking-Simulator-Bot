@@ -18,7 +18,7 @@ export const cook: ContextCommand['cook'] = async (interaction: ContextMenuInter
         .addField('Joined:', `<t:${~~((target?.joinedTimestamp as any) / 1000)}:F>`)
         .addField('Roles', `${target?.roles.cache.filter(r => r.id !== interaction.guild?.id).map(r => `<@&${r.id}>`).join(' ')}`)
         .addField('Did you know...', `... that the account was created <t:${~~((target?.user.createdTimestamp as any) / 1000)}:R>!\n... the user joined <t:${~~((target?.joinedTimestamp as any) / 1000)}:R>!`)
-        .setFooter(`Warns, Kicks, Bans... - ID: ${interaction.targetId}`)
+        .setFooter({ text: `Warns, Kicks, Bans... - ID: ${interaction.targetId}` })
         .setColor(`${!target?.presence ? 'GREY' : target.presence.status === 'online' ? 'GREEN' : target.presence.status === 'dnd' ? 'RED': 'YELLOW'}`);
 
     interaction.editReply({ embeds: [embed] })

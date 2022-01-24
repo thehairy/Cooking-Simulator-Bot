@@ -46,7 +46,7 @@ const handleCommand = async (interaction: CommandInteraction | ContextMenuIntera
             .setTitle('An error occured')
             .setDescription(`\`\`\`js\n${clean(evaluated.slice(0, 4096))}\n\`\`\``)
             .addField('Type', `\`\`\`ts\n${type}\n\`\`\``)
-            .setFooter(`${evaluated.length > 1 ? 'The error was longer than 4096 chars!' : ''}`);
+            .setFooter({ text: `${evaluated.length > 1 ? 'The error was longer than 4096 chars!' : ''}` });
 
         interaction.editReply({ embeds: [embed] });
     }
@@ -69,7 +69,7 @@ const handleAutocomplete = async (interaction: AutocompleteInteraction): Promise
             .setTitle('An error occured')
             .setDescription(`\`\`\`js\n${clean(evaluated.slice(0, 4096))}\n\`\`\``)
             .addField('Type', `\`\`\`ts\n${type}\n\`\`\``)
-            .setFooter(`${evaluated.length > 1 ? 'The error was longer than 4096 chars!' : ''}`);
+            .setFooter({ text: `${evaluated.length > 1 ? 'The error was longer than 4096 chars!' : ''}` });
 
         interaction.channel?.send({ embeds: [embed] });
     }

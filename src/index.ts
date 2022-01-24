@@ -1,8 +1,8 @@
 // Import Structures
 import { Client, Collection } from 'discord.js';
 import { readdirSync } from 'fs';
-import Sequelize from 'sequelize';
 import path from 'path';
+import database from './database';
 
 // Import Types
 import type { ContextCommand, SlashCommand, Event } from './@types';
@@ -13,64 +13,6 @@ config();
 // Client
 const chef = new Client({ intents: 839 })
 chef.commandbois = new Collection();
-
-// Database
-const sequelize = new Sequelize.Sequelize('database', 'user', 'password', {
-	host: 'localhost',
-	dialect: 'sqlite',
-	logging: false,
-	// SQLite only
-	storage: 'database.sqlite',
-});
-
-// Models
-export const Users = sequelize.define('users', {
-    id: {
-        type: Sequelize.STRING,
-        unique: true,
-        primaryKey: true
-    }
-});
-
-export const Warns = sequelize.define('warns', {
-    reason: {
-        type: Sequelize.STRING
-    },
-    date: {
-        type: Sequelize.DATE
-    },
-    punisher: {
-        type: Sequelize.STRING
-    }
-});
-
-export const Kicks = sequelize.define('kicks', {
-    reason: {
-        type: Sequelize.STRING
-    },
-    date: {
-        type: Sequelize.DATE
-    },
-    punisher: {
-        type: Sequelize.STRING
-    }
-});
-
-export const Banns = sequelize.define('kicks', {
-    reason: {
-        type: Sequelize.STRING
-    },
-    date: {
-        type: Sequelize.DATE
-    },
-    punisher: {
-        type: Sequelize.STRING
-    }
-});
-
-Warns.belongsTo(Users);
-Kicks.belongsTo(Users);
-Banns.belongsTo(Users);
 
 // Commands and Events
 const eventyFiles = readdirSync(path.resolve(__dirname, 'eventybois')).filter(file => file.toString().endsWith('.js'));

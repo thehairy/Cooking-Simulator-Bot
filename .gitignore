@@ -7,3 +7,4 @@
 *_REMOTE_*
 *.orig
 *.sqlite
+test.js

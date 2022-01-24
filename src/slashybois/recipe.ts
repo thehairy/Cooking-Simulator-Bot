@@ -1,17 +1,17 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
 import { AutocompleteInteraction, Collection, CommandInteraction, MessageEmbed } from "discord.js";
 import type { Recipe, RecipeFile, SlashCommand } from "src/@types";
-import * as normal from '../recipes/normal';
-import * as mobile from '../recipes/mobile';
-import * as pizza from '../recipes/pizza';
-import * as cac from '../recipes/cac';
+import normal from '../classes/recipes/normal';
+import mobile from '../classes/recipes/mobile';
+import pizza from '../classes/recipes/pizza';
+import cac from '../classes/recipes/cac';
 
 
 const recipes = new Collection<string, Recipe>();
-normal.getAll().each(recipe => recipes.set(recipe.name, recipe));
-mobile.getAll().each(recipe => recipes.set(recipe.name, recipe));
-cac.getAll().each(recipe => recipes.set(recipe.name, recipe));
-pizza.getAll().each(recipe => recipes.set(recipe.name, recipe));
+const normalRecipes = (new normal).getAll().each((recipe: Recipe) => recipes.set(recipe.name, recipe));
+const mobileRecipes = (new mobile).getAll().each((recipe: Recipe) => recipes.set(recipe.name, recipe));
+const cacRecipes = (new cac).getAll().each((recipe: Recipe) => recipes.set(recipe.name, recipe));
+const pizzaRecipes = (new pizza).getAll().each((recipe: Recipe) => recipes.set(recipe.name, recipe));
 
 export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
     .setName('recipe')
@@ -72,7 +72,29 @@ export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction
         }, 3000);
     } else {
         const gamemode = interaction.options.getString('gamemode') || 'normal';
-        const recipe = ((await import(`../recipes/${gamemode}`)) as RecipeFile).getRandom();
+        let recipe: Recipe;
+        switch (gamemode) {
+            case 'normal': {
+                recipe = normalRecipes.random() as Recipe;
+                break;
+            }
+            case 'mobile': {
+                recipe = mobileRecipes.random() as Recipe;
+                break;
+            }
+            case 'cac': {
+                recipe = cacRecipes.random() as Recipe;
+                break;
+            }
+            case 'pizza': {
+                recipe = pizzaRecipes.random() as Recipe;
+                break;
+            }
+            default: {
+                recipe = normalRecipes.random() as Recipe;
+                break;
+            }
+        }
 
         const embed = new MessageEmbed()
             .setTitle(recipe.name)

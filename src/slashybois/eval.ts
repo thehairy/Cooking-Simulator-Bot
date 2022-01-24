@@ -55,7 +55,7 @@ export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction
         .setDescription(`\`\`\`js\n${clean(evaluated.slice(0, 4096))}\n\`\`\``)
         .addField('Type', `\`\`\`ts\n${type}\n\`\`\``)
         .addField('Input', `\`\`\`js\n${clean(code.length > 1024 ? `${code.slice(0, 1021)}...` : code)}\n\`\`\``)
-        .setFooter(`Took ${timer} ms`);
+        .setFooter({ text: `Took ${timer} ms` });
 
     if (evaluated.length > 4096)
         embed.addField('More...', 'The evaluated response was cut because it was longer than 4096 chars!');

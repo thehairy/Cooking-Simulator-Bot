@@ -1,7 +1,8 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
 import { CommandInteraction, GuildMember, MessageEmbed, Permissions } from "discord.js";
-import { Users, Warns } from '../index';
+import { Users, Warns } from '../database';
 import type { SlashCommand } from "src/@types";
+import ModLog from "../classes/modLog";
 
 export const recipe: SlashCommand['recipe'] = new SlashCommandBuilder()
     .setName('warn')
@@ -24,7 +25,7 @@ export const permission: SlashCommand['permission'] = Permissions.FLAGS.KICK_MEM
 export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction): Promise<void> => {
     await interaction.deferReply({ ephemeral: true });
     
-    const target = interaction.options.getMember('user', true) as GuildMember;
+    const target = interaction.options.getMember('user') as GuildMember;
     const reason = interaction.options.getString('reason') || undefined;
     const punisher = interaction.member as GuildMember;
 
@@ -38,14 +39,18 @@ export const cook: SlashCommand['cook'] = async (interaction: CommandInteraction
         .addField(`Punisher`, `${punisher}`)
         .addField(`Reason`, `${reason ? reason : 'No reason provided'}`);
 
-    await target.send({ embeds: [embed] });
+    //await target.send({ embeds: [embed] }).catch(() => {});
 
     let dbTarget = await Users.findOne({ where: { id: target.id } });
     if (!dbTarget) {
         dbTarget = await Users.create({ id: target.id })
     }
 
-    await Warns.create({ reason, date: new Date(), punisher: punisher.id, userId: target.id });
+    const warn = await Warns.create({ reason, date: new Date(), punisher: punisher.id, userId: target.id });
 
+    const modLog = new ModLog('WARN', target, warn.get('id') as number);
+    await modLog.send();
+
+    await warn.update({ ref: modLog.url });
     await interaction.editReply({ content: `${target} has been warned.` });
 }

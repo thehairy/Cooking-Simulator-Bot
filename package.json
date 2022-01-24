@@ -11,7 +11,7 @@
   "author": "thehairy",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/builders": "^0.9.0",
+    "@discordjs/builders": "^0.11.0",
     "@discordjs/rest": "^0.1.0-canary.0",
     "@sapphire/type": "^2.1.2",
     "@thehairy/reconlx-dev": "^1.1.5",
