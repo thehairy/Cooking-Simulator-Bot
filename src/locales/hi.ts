@@ -1,6 +1,3 @@
-/**
- * If you need to have replacer in your string, use {} as placeholder, for example: 'This is a {}.'
- */
 const translations = {
     "BOT_ALIVE": '',
     "REFERENCE": '',

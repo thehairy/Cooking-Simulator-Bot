@@ -121,3 +121,23 @@ interface Ingredient {
 interface RecipeFile {
   getRandom(): Recipe;
 }
+
+export interface TranslationData {
+  "BOT_ALIVE": string;
+  "REFERENCE": string;
+  "NO_HISTORY_FOUND": string;
+  "AND_MORE": string;
+  "HISTORY_OF": string;
+  "ONLINE": string;
+  "OFFLINE": string;
+  "DND": string;
+  "IDLE": string;
+  "JOINED": string;
+  "ROLES": string;
+  "CREATED": string;
+  "TRANSLATED_FROM": string;
+  "PING": string;
+  "NO_RECIPE": string;
+  "NO_RECIPE_NAME": string;
+  "HAS_BEEN_WARNED": string;
+}

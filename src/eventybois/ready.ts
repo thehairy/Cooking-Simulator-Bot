@@ -1,3 +1,4 @@
+import { replacePlaceholder, translate } from '../util';
 import type { Event } from '../@types';
 import { sync } from '../database';
 
