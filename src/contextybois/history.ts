@@ -6,7 +6,7 @@ import type { ContextCommand, SlashCommand } from "src/@types";
 export const recipe: ContextCommand['recipe'] = new ContextMenuCommandBuilder()
     .setName('History')
     .setType(2)
-    .setDefaultPermission(true);
+    .setDefaultPermission(false);
 
 export const permission: ContextCommand['permission'] = Permissions.FLAGS.KICK_MEMBERS;
 

@@ -2,7 +2,6 @@ import type { Message } from "discord.js";
 import type { Event } from "src/@types";
 import { REST } from '@discordjs/rest';
 import { Routes } from "discord-api-types/v9";
-import { SlashCommandBuilder } from "@discordjs/builders";
 
 export const name: Event['name'] = 'messageCreate';
 export const once: Event['once'] = false;
@@ -36,22 +35,31 @@ const setCommands = async (message: Message): Promise<void> => {
         console.log(error);
         await msg.edit({ content: 'Failed to refresh commands, please try again later.' });
     }
-    
-    message.guild?.commands.fetch().then(cmds => cmds.each(c => {
-        const command = message.client.commandbois.get(c.name);
+
+    const cmds = await message.guild?.commands.fetch();
+    if (!cmds) return;
+
+    for (const [id, cmd] of cmds) {
+        const command = message.client.commandbois.get(cmd.name);
         if (command && command.ownerOnly) {
-            c.permissions.add({
+            await cmd.permissions.add({
                 permissions: [{
                     id: '211888560662511617',
                     type: 'USER',
                     permission: true
                 }]
-            });
+            })
         } else if (command && command.permission) {
-            const roles = message.guild?.roles.cache.filter(r => r.permissions.has(command.permission!)).map(r => r.id);
-            roles?.forEach(r => {
-                c.permissions.add({ permissions: [{ id: r, type: 'ROLE', permission: true }] }
-            )});
+            const roles = message.guild!.roles.cache.filter(role => role.permissions.has(command.permission!)).map(r => r.id);
+            for (const role of roles) {
+                await cmd.permissions.add({
+                    permissions: [{
+                        id: role,
+                        type: 'ROLE',
+                        permission: true
+                    }]
+                })
+            }
         }
-    }));
+    }
 }
