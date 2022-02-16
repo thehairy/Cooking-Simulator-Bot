@@ -1,7 +1,7 @@
 import Type from "@sapphire/type";
-import { ContextCommand, Event, SlashCommand } from "src/@types";
+import { ContextCommand, Event, ModalCommand, SlashCommand } from "../@types";
 import { clean } from "../util.js";
-import { AutocompleteInteraction, CommandInteraction, ContextMenuInteraction, MessageEmbed, Util } from "discord.js";
+import { AutocompleteInteraction, CommandInteraction, ContextMenuInteraction, MessageEmbed, ModalSubmitInteraction, Util } from "discord.js";
 import type { Interaction } from 'discord.js';
 
 export const name: Event['name'] = 'interactionCreate';
@@ -13,6 +13,10 @@ export const cook: Event['cook'] = async (interaction: Interaction): Promise<voi
     }
     if (interaction.isAutocomplete()) {
         return void handleAutocomplete(interaction);
+    }
+
+    if (interaction.isModalSubmit()) {
+        return void handleModal(interaction);
     }
 };
 
@@ -36,7 +40,7 @@ const handleCommand = async (interaction: CommandInteraction | ContextMenuIntera
         console.log(err);
         
         if (!interaction.deferred && !interaction.replied)
-            interaction.deferReply({ ephemeral: true });
+            await interaction.deferReply({ ephemeral: true });
         
         const evaluated = err.toString();
         const type = new Type(err).toString();
@@ -57,6 +61,29 @@ const handleAutocomplete = async (interaction: AutocompleteInteraction): Promise
         if (command) {
             console.log(`Received autocomplete from ${interaction.user.tag} using ${interaction.commandName}!`);
             await command.cook(interaction);
+        }
+    } catch (err: any) {
+        console.warn(err);
+                
+        const evaluated = err.toString();
+        const type = new Type(err).toString();
+
+        const embed = new MessageEmbed()
+            .setTitle('An error occured')
+            .setDescription(`\`\`\`js\n${clean(evaluated.slice(0, 4096))}\n\`\`\``)
+            .addField('Type', `\`\`\`ts\n${type}\n\`\`\``)
+            .setFooter({ text: `${evaluated.length > 1 ? 'The error was longer than 4096 chars!' : ''}` });
+
+        interaction.channel?.send({ embeds: [embed] });
+    }
+}
+
+const handleModal = async (interaction: ModalSubmitInteraction): Promise<void> => {
+    try {
+        const modal = interaction.client.modalbois.get(interaction.customId) as ModalCommand | undefined;
+        if (modal) {
+            console.log(`Received modal from ${interaction.user.tag} using ${interaction.customId}!`);
+            await modal.cook(interaction);
         }
     } catch (err: any) {
         console.warn(err);

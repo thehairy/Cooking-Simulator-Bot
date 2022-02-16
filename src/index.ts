@@ -5,7 +5,7 @@ import path from 'path';
 import database from './database';
 
 // Import Types
-import type { ContextCommand, SlashCommand, Event } from './@types';
+import type { ContextCommand, SlashCommand, Event, ModalCommand } from './@types';
 
 import { config } from 'dotenv';
 config();
@@ -13,11 +13,13 @@ config();
 // Client
 const chef = new Client({ intents: 839 })
 chef.commandbois = new Collection();
+chef.modalbois = new Collection();
 
 // Commands and Events
 const eventyFiles = readdirSync(path.resolve(__dirname, 'eventybois')).filter(file => file.toString().endsWith('.js'));
 const slashyFiles = readdirSync(path.resolve(__dirname, 'slashybois')).filter(file => file.toString().endsWith('.js'));
 const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filter(file => file.toString().endsWith('.js'));
+const modalFiles = readdirSync(path.resolve(__dirname, 'modalbois')).filter(file => file.toString().endsWith('.js'));
 
 (async () => {
     for (const eventFile of eventyFiles) {
@@ -37,6 +39,11 @@ const contextyFiles = readdirSync(path.resolve(__dirname, 'contextybois')).filte
     for (const contextFile of contextyFiles) {
         const context: ContextCommand = await import(path.resolve(__dirname, 'contextybois', contextFile));
         chef.commandbois.set(context.recipe.name, context);
+    }
+
+    for (const modalFile of modalFiles) {
+        const modal: ModalCommand = await import(path.resolve(__dirname, 'modalbois', modalFile));
+        chef.modalbois.set(modal.customId, modal);
     }
 })();
 

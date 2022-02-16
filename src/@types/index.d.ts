@@ -1,5 +1,5 @@
 import { ContextMenuCommandBuilder } from '@discordjs/builders';
-import type { Collection, ApplicationCommandData, MessageApplicationCommandData, CommandInteraction, ContextMenuInteraction, UserApplicationCommandData, PermissionResolvable, AutocompleteInteraction } from 'discord.js';
+import type { Collection, ApplicationCommandData, MessageApplicationCommandData, CommandInteraction, ContextMenuInteraction, UserApplicationCommandData, PermissionResolvable, AutocompleteInteraction, ModalSubmitInteraction } from 'discord.js';
 
 declare module 'discord.js' {
   interface Client {
@@ -11,6 +11,10 @@ declare module 'discord.js' {
      * All events.
      */
     eventybois: Collection<string, Event>;
+    /**
+     * All modal commands.
+     */
+    modalbois: Collection<string, ModalCommand>;
   }
 }
 
@@ -37,6 +41,23 @@ interface SlashCommand {
    */
   cook(interaction: CommandInteraction | AutocompleteInteraction): Promise<void>;
 }
+
+/**
+ * A ModalCommand object used to use custom modal commands.
+ */
+interface ModalCommand {
+  /**
+   * Custom id of the modal.
+   */
+  customId: string;
+  /**
+   * The method this command executes if called.
+   * 
+   * @param {ModalSubmitInteraction} interaction The CommandInteraction object from the interactionCreate event or collector.
+   */
+  cook(interaction: ModalSubmitInteraction): Promise<void>;
+}
+
 
 /**
  * A ContextCommand object used to create and use custom context commands.
@@ -122,7 +143,7 @@ interface RecipeFile {
   getRandom(): Recipe;
 }
 
-export interface TranslationData {
+interface TranslationData {
   "BOT_ALIVE": string;
   "REFERENCE": string;
   "NO_HISTORY_FOUND": string;
