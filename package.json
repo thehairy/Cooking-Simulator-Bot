@@ -16,7 +16,7 @@
     "@sapphire/type": "^2.1.2",
     "@vitalets/google-translate-api": "^7.0.0",
     "discord-api-types": "^0.22.0",
-    "discord.js": "github:monbrey/discord.js#modals",
+    "discord.js": "^14.0.0-dev.1649505803-3c0bbac",
     "dotenv": "^10.0.0",
     "recursive-readdir": "^2.2.2",
     "sequelize": "^6.13.0",
